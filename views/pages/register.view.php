@@ -17,28 +17,30 @@ else
         <div class="username">
             <div class="firstname">
                 <label class="mt-2" for="firstname">First Name</label>
-				<small class="form-text text-danger"> <?php echo $firstname_error?></small>
                 <input type="text" name="firstname" placeholder="Enter First name">
+                <small class="form-text text-danger"> <?php echo $firstname_error?></small>
             </div>
             <div class="lastname">
                 <label class="mt-2" for="lastname">Last Name</label>
-				<small class="form-text text-danger"> <?php echo $lastname_error; ?></small>
                 <input type="text" name="lastname" placeholder="Enter Last name">
+                <small class="form-text text-danger"> <?php echo $lastname_error; ?></small>
             </div>
         </div>
         <label class="mt-2" for="phone">Phone Number</label>
-		<small class="form-text text-danger"> <?= $phone_error; ?></small>
         <input type="number" name="phone" placeholder="Enter your phone number">
-        <label class="mt-2" for="email">Email</label>
-		<small class="form-text text-danger"> <?php echo $email_error; ?></small>
-        <input type="text" name="email" placeholder="Enter your email">
-        <label class="mt-2" for="password">Password</label>
-		<small class="form-text text-danger"> <?php echo $password_error; ?></small>
-        <input type="password" name="password" placeholder="Enter your password">
-        <label class="mt-2" for="password1">Comfrm Password</label>
-		<small class="form-text text-danger"> <?php echo $password_comfrm_error; ?></small>
-        <input type="password" name="password_comfrm" placeholder="Enter your password again to comfirm">
+        <small class="form-text text-danger"> <?= $phone_error; ?></small>
 
+        <label class="mt-2" for="email">Email</label>
+        <input type="text" name="email" placeholder="Enter your email">
+        <small class="form-text text-danger"> <?php echo $email_error; ?></small>
+
+        <label class="mt-2" for="password">Password</label>
+        <input type="password" name="password" placeholder="Enter your password">
+        <small class="form-text text-danger"> <?php echo $password_error; ?></small>
+
+        <label class="mt-2" for="password1">Comfrm Password</label>
+        <input type="password" name="password_comfrm" placeholder="Enter your password again to comfirm">
+        <small class="form-text text-danger"> <?php echo $password_comfrm_error; ?></small>
 
         <button id="login" type="submit" name = 'submit'>Sign up</button>
 
