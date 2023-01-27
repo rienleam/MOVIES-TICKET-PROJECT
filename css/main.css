@@ -61,14 +61,23 @@ body,html{
     }
     60%
     {
-        background-image: url(../assets/images/avatar.jpg);
+        background-image: url(../assets/images/spiderman.jpg);
     }
     80%
     {
-        background-image: url(../assets/images/avatar.jpg);
+        background-image: url(../assets/images/batman.jpg);
     }
     100%
     {
-        background-image: url(../assets/images/avatar.jpg);
+        background-image: url(../assets/images/batman.jpg);
     }
+}
+
+.container_card {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    width: 17%;
 }
