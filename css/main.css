@@ -1,8 +1,9 @@
 body,html{
+    background: #000;
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 500px;
+    height: 750px;
     font-family: sans-serif;
 }
 .Section_top{
@@ -18,14 +19,14 @@ body,html{
     justify-content: center;
     animation: change 10s infinite ease-in-out;
 }
-.content{
+/* .content{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-transform: uppercase;
 
-}
+} */
 .content h1{
     color: #fff;
     font-size: 60px;

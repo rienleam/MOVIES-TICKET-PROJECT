@@ -27,7 +27,7 @@
         />
       </a>
       <!-- Left links -->
-      <ul class="navbar-nav me-auto mb-lg-0">
+      <ul class="navbar-nav me-auto mb-lg-0" style="width:50%">
         <li class="nav-item">
           <a class="nav-link" href="#">Home</a>
         </li>
@@ -43,10 +43,16 @@
       </ul>
       <!-- Left links -->
     </div>
+    <form action="search.php" method="post" class="d-flex" style="width:50%">
+      <input type="text" name="search" class="form-control mt-2 mr-7"
+      placeholder="Type here to search....">
+      <br>
+      <button type="submit" name="submit" class="btn btn-success mt-2 mr-7">submit</button>
+    </form>
     <!-- Collapsible wrapper -->
 
     <!-- Right elements -->
-    <div class="d-flex align-items-center">
+    <div class="d-flex align-items-center mr-60">
       <!-- Icon -->
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
@@ -56,6 +62,7 @@
                 <a class="nav-link" href="views/form/login.php">Login</a>
             </li>
       </ul>
+      
     </div>
     <!-- Right elements -->
   </div>
