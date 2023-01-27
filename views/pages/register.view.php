@@ -44,7 +44,7 @@ else
 
         <button id="login" type="submit" name = 'submit'>Sign up</button>
 
-        <p id="ask">Have an account? <a href="../login/login.html"> Log In</a></p>
+        <p id="ask">Have an account? <a href="login.view.php"> Log In</a></p>
         
     </form>
 
