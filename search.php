@@ -43,24 +43,27 @@ $Description = $row ['description'];
 $Time = $row ['time'];
 $Show_img = $row ['image'];
 ?>
-    <div class="col-lg-4 m-10">
-        <form action="" method="post">
-        <div class="row card shadow d-flex f-row w-50">
-        <div class="card-body">
-        <div> 
-            <img src="<?php echo $Show_img;?>" class="img-fluid px-5 prdimg" alt="ff">
-        </div><br>
-        <h4 name="product_name"><b><?php echo $Show_Name ;?></b></h4>
-        <h6 class="secondary" name="price"><small><?php echo "Time : " . $Time ;?></small></h6>
-        <h6 class="secondary" name="price"><small><?php echo "Date : " . $Date ;?></small></h6>
-        <h6 class="price"><small> <?php echo "Prize :$ " . $Price ;?></small></h6>
-        <h6 class="secondary"> <small><?php echo "Description : " . $Description ;?></small></h6>
-        <button class="btn btn-warning" type="submit" name="add"> 
-            <i class="fa fa-shopping-cart"> </i>  Booking Now</button>
-        </div>
-        </div>
-        </form>
-        </div>
+<div class="container">
+  <div class="row-lg-3 m-10 d-flex flex-wrap w-100">
+    <form action="" method="post" class="m-5">
+    <div class="row card shadow d-flex f-row">
+    <div class="card-body">
+    <div> 
+        <img src="<?php echo $Show_img;?>" class="img-fluid px-5 prdimg" alt="ff">
+    </div><br>
+    <h4 name="product_name"><b><?php echo $Show_Name ;?></b></h4>
+    <h6 class="secondary" name="price"><small><?php echo "Time : " . $Time ;?></small></h6>
+    <h6 class="secondary" name="price"><small><?php echo "Date : " . $Date ;?></small></h6>
+    <h6 class="price"><small> <?php echo "Prize :$ " . $Price ;?></small></h6>
+    <h6 class="secondary"> <small><?php echo "Description : " . $Description ;?></small></h6>
+    <button class="btn btn-warning" type="submit" name="add"> 
+        <i class="fa fa-shopping-cart"> </i>  Booking Now</button>
+    </div>
+    </div>
+    </form>
+    </div>
+</div>
+
 
     <?php
 

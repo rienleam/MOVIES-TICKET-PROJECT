@@ -8,7 +8,7 @@
     <?php 
     foreach ($items as $item){ 
     ?>
-        <div class="card w-25 m-2 bg-dark text-light">
+        <div class="card m-3 bg-light text-dark">
         <img src="<?php echo $item['image']; ?>" class="card-img-top" style = "width: 100%; height: 270px" alt="Fissure in Sandstone"/>
         <div class="card-body">
             <h5 class="card-title"><?php echo $item['show_name']; ?></h5>

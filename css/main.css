@@ -78,6 +78,6 @@ body,html{
     display: flex;
     flex-wrap: wrap;
 }
-.card {
-    width: 17%;
+.card{
+    width: 22.5%;
 }
