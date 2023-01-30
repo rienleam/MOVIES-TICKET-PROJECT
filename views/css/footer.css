@@ -1,7 +1,6 @@
-body{
-    background: #000;
-}
 .fa {
     font-size: 40px;
-
+}
+li a {
+    text-decoration: none;
 }
