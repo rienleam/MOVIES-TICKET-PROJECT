@@ -81,6 +81,11 @@ body,html{
 .card{
     width: 22.5%;
 }
+.card:hover {
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
 .card-body {
     display: flex;
     flex-direction: column;
