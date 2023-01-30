@@ -63,8 +63,6 @@ $Show_img = $row ['image'];
     </form>
     </div>
 </div>
-
-
     <?php
 
             }
