@@ -76,10 +76,11 @@ body,html{
 .container_card {
     width: 100%;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 .card{
-    width: 22.5%;
+    width: 22%;
 }
 .card:hover {
     -ms-transform: scale(1.05);
