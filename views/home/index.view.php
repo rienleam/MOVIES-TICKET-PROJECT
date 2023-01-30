@@ -10,9 +10,17 @@
         <div class="card m-3 bg-light text-dark">
         <img src="<?php echo $item['image']; ?>" class="card-img-top" style = "width: 100%; height: 270px" alt="Fissure in Sandstone"/>
         <div class="card-body">
-            <h4 class="card-title"><?php echo $item['show_name']; ?></h4>
-            <p class="card-text"><?php echo $item['date']; ?></p>
-            <p class="card-text"><?php echo $item['time']; ?></p>
+            <h4 class="card-title fw-bold"><?php echo $item['show_name']; ?></h4>
+            <div class="date">
+                <i class="large material-icons">date_range</i>
+                <p class="card-text"><?php echo $item['date']; ?></p>
+            </div>
+            
+            <div class="time">
+                <i class="large material-icons">access_alarms</i>
+                <p class="card-text"><?php echo $item['time']; ?></p>
+            </div>
+
             <a href="#" class="btn btn-outline-warning w-100 rounded-pill">Booking Now</a>
         </div>
         </div>

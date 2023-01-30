@@ -95,3 +95,14 @@ body,html{
 .card-text {
     text-align: justify;
 }
+.date, .time {
+    display: flex;
+    margin-bottom: 10px;
+}
+.material-icons {
+    margin-right: 5px;
+    color: orange;
+}
+.btn {
+    font-weight: bold;
+}
