@@ -33,25 +33,8 @@
     </div>
     <div class="d-flex align-items-center">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <?php 
-            $link =  "/login";
-              if ($link == '/login')
-              {
-                  $Account = "Logout";
-                  if ($Account == "Logout")
-                  {
-                    $link = "/Logout";
-                  }
-                  if($link == "/Logout")
-                  {
-                    $Account = "Login";
-                    $link == '/login';
-                  }
-              }
-              
-            ?>
             <li class="nav-item">
-                <a class="nav-link" href="/login"><?= $Account;?></a>
+                <a class="nav-link" href="/login">Login</a>
             </li>
       </ul>
     </div>
