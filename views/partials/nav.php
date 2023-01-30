@@ -1,8 +1,6 @@
-<!-- Navbar -->
+
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top p-0 m-0">
-  <!-- Container wrapper -->
   <div class="container-fluid">
-    <!-- Toggle button -->
     <button
       class="navbar-toggler"
       type="button"
@@ -15,9 +13,9 @@
       <i class="fas fa-bars"></i>
     </button>
 
-    <!-- Collapsible wrapper -->
+ 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <!-- Navbar brand -->
+
       <a class="navbar-brand mt-2 mt-lg-0" href="#">
         <img
           src="../../assets/images/logo-remove-preview.png"
@@ -26,39 +24,36 @@
           alt="MT Logo"
         />
       </a>
-      <!-- Left links -->
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Movies</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
-      <!-- Left links -->
+      <div class="navbar-nav">
+      <a class="<?= urlIs('/') ? 'active bg-dark text-white' : '' ?> nav-link" href="/">Home <span class="sr-only"></span></a>
+      <a class="<?= urlIs('/movie') ? 'active bg-dark text-white' : '' ?> nav-link" href="/movie">Movies</a>
+      <a class="<?= urlIs('/About') ? 'active bg-dark text-white' : '' ?> nav-link" href="/About">About</a>
+      <a class="<?= urlIs('/Contact') ? 'active bg-dark text-white' : '' ?> nav-link" href="/Contact">Contact</a>
     </div>
-    <!-- Collapsible wrapper -->
-
-    <!-- Right elements -->
+    </div>
     <div class="d-flex align-items-center">
-      <!-- Icon -->
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <?php 
+            $link =  "/login";
+              if ($link == '/login')
+              {
+                  $Account = "Logout";
+                  if ($Account == "Logout")
+                  {
+                    $link = "/Logout";
+                  }
+                  if($link == "/Logout")
+                  {
+                    $Account = "Login";
+                    $link == '/login';
+                  }
+              }
+              
+            ?>
             <li class="nav-item">
-                <a class="nav-link" href="views/pages/register.view.php">Register</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="views/pages/login.view.php">Login</a>
+                <a class="nav-link" href="/login"><?= $Account;?></a>
             </li>
       </ul>
     </div>
-    <!-- Right elements -->
   </div>
-  <!-- Container wrapper -->
 </nav>
-<!-- Navbar -->

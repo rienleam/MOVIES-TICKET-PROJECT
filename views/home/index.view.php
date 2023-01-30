@@ -1,4 +1,6 @@
 
+  <?php require "views/partials/header.php" ?>
+  <?php require "views/partials/nav.php" ?>
 <div id="carouselExample" class="carousel slide">
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -20,3 +22,5 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+
+<?php require "views/partials/footer.php" ?>

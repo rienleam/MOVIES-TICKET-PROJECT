@@ -1,23 +1,13 @@
 <?php
-
-function validate_username(string $username)
+require 'models/register.model.php';
+function validate_username(string $username) : bool
 {
-    if (!ctype_alnum( $username))
-    {
-      return true;
-    }
-
+   return !ctype_alnum( $username);
 }
 
-function validate_email(string $email)
+function validate_email(string $email) : bool
 {
-    if (!filter_var( $email,FILTER_VALIDATE_EMAIL)){
-       return true;
-    }
-}
-
-function validate_number(int $phone){
-   $valid_phone_number = filter_var($phone,FILTER_SANITIZE_NUMBER_INT);
+   return !filter_var( $email,FILTER_VALIDATE_EMAIL);
 }
 
 $firstname_error = '';
@@ -86,16 +76,10 @@ $task_complete = 0;
       }
       else
       {
-         $uppercase    = preg_match('@[A-Z]@', $password);
-         $lowercase    = preg_match('@[a-z]@', $password);
-         $number       = preg_match('@[0-9]@', $password);
-         $specialchars = preg_match('@[^\w]@', $password);
-         
-         if (!$uppercase || !$lowercase || !$number || !$specialchars || strlen($password) < 8) 
+         if(strlen(($password))<8)
          {
-           $password_error = 'Password is not Strong';
-           
-         } 
+            $password_error = "Password should be at least 8 characters";
+         }
          else 
          {
             $task_complete += 1;
@@ -133,20 +117,21 @@ $task_complete = 0;
          else 
          {
             $task_complete += 1;
-           
+            $getEmailInDB =  getIdUser($email);
+            if ($getEmailInDB) 
+            {
+               $email_error = "Your Email already have account ";
+            }
+            else{
+               $task_complete += 1;
+            }
          }
       }
-      if ($task_complete === 6)
+      if ($task_complete == 7)
       {
-         require '../../connection.php';
-         $password = password_hash($password, PASSWORD_DEFAULT);
-         $sql = "INSERT INTO users(First_name, Last_name, email, password, phone_number) 
-         VALUES(?,?,?,?,?)";
-       $stmt = $connection->prepare($sql);
-       $stmt->execute([$firstname, $lastname, $email, $password, $phone]);
-         
-         header("Location:../../index.php");
+         inputDataInToDB($firstname, $lastname, $email, $password, $phone);
+         header("Location: /");
       }
-
-
    }
+
+require 'views/register/register.view.php'; 

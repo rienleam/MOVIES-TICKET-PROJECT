@@ -8,6 +8,9 @@ body {
     font-family: sans-serif;
     flex-direction: column;
 }
+.small {
+    text-align: center;
+}
 form, .form {
     margin-top: 50px;
     width: 45%;
@@ -17,6 +20,7 @@ form, .form {
     align-self: center;
     justify-content: center;
 }
+
 .form {
     width: 30%;
     height: 80vh;

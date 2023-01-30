@@ -1,17 +1,9 @@
 <?php
- require '../partials/header.php';
- require '../partials/nav.php';
- require '../../controllers/pages/register.controllers.php';
-if($task_complete === 6)
-{
-    $action = '../../index,php';
-}
-else
-{
-    $action = "#";
-}
+session_start();
+ require 'views/partials/header.php';
+ require 'views/partials/nav.php';
 ?>
-<link rel="stylesheet" href="../css/style.register.view.css">
+<link rel="stylesheet" href="views/css/style.register.view.css">
 <form action= "<?php $action ?>"  method="post">
         <h1 class="mb-4">Create New Account</h1>
         <div class="username">
@@ -38,15 +30,15 @@ else
         <input type="password" name="password" placeholder="Enter your password">
         <small class="form-text text-danger"> <?php echo $password_error; ?></small>
 
-        <label class="mt-2" for="password1">Comfrm Password</label>
+        <label class="mt-2" for="password_comfrm">Comfrm Password</label>
         <input type="password" name="password_comfrm" placeholder="Enter your password again to comfirm">
         <small class="form-text text-danger"> <?php echo $password_comfrm_error; ?></small>
 
         <button id="login" type="submit" name = 'submit'>Sign up</button>
 
-        <p id="ask">Have an account? <a href="login.view.php"> Log In</a></p>
+        <p id="ask">Have an account? <a href="/login"> Log In</a></p>
         
     </form>
 
 <?php
-    require '../partials/footer.php';
+    require 'views/partials/footer.php';
