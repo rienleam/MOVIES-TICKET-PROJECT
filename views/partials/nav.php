@@ -29,7 +29,7 @@
       <!-- Left links -->
       <ul class="navbar-nav me-auto mb-lg-0" style="width:50%">
         <li class="nav-item">
-          <a class="nav-link text-xl" href="#">Home</a>
+          <a class="nav-link" href="#">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Movies</a>
