@@ -15,13 +15,13 @@
                 <i class="large material-icons">date_range</i>
                 <p class="card-text"><?php echo $item['date']; ?></p>
             </div>
-            
             <div class="time">
                 <i class="large material-icons">access_alarms</i>
                 <p class="card-text"><?php echo $item['time']; ?></p>
             </div>
-
-            <a href="#" class="btn btn-outline-warning w-100 rounded-pill">Booking Now</a>
+            <a href="#" class="btn details btn-outline-warning w-100 rounded-pill">Details</a>
+            <a href="#" class="btn book btn-outline-warning w-100 rounded-pill">Book Now</a>
+            
         </div>
         </div>
     <?php
