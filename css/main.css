@@ -81,3 +81,11 @@ body,html{
 .card{
     width: 22.5%;
 }
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-text {
+    text-align: justify;
+}
