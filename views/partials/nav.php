@@ -29,7 +29,7 @@
       <!-- Left links -->
       <ul class="navbar-nav me-auto mb-lg-0" style="width:50%">
         <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link text-xl" href="#">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Movies</a>
@@ -47,7 +47,7 @@
       <input type="text" name="search" class="form-control mt-2 mr-7"
       placeholder="Type here to search....">
       <br>
-      <button type="submit" name="submit" class="btn btn-success mt-2 mr-7">submit</button>
+      <button type="submit" name="submit" class="btn btn-success mt-2 mr-7">search</button>
     </form>
     <!-- Collapsible wrapper -->
 
@@ -59,7 +59,7 @@
                 <a class="nav-link" href="#">Register</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="views/form/login.php">Login</a>
+                <a class="nav-link" href="views/form/login.php">| Login</a>
             </li>
       </ul>
       
