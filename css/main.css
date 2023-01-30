@@ -95,7 +95,7 @@ body,html{
 .card-text {
     text-align: justify;
 }
-.date, .time {
+.date, .time, .duration {
     display: flex;
     justify-content: flex-start;
     align-items: center;

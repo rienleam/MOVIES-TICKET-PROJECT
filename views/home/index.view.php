@@ -16,8 +16,12 @@
                 <p class="card-text"><?php echo $item['date']; ?></p>
             </div>
             <div class="time">
-                <i class="large material-icons">access_alarms</i>
+                <i class="large material-icons">alarm_on</i>
                 <p class="card-text"><?php echo $item['time']; ?></p>
+            </div>
+            <div class="duration">
+                <i class="large material-icons">access_alarms</i>
+                <p class="card-text"><?php echo $item['duration']; ?></p>
             </div>
             <a href="#" class="btn details btn-outline-warning w-100 rounded-pill">Details</a>
             <a href="#" class="btn book btn-outline-warning w-100 rounded-pill">Book Now</a>
