@@ -8,7 +8,7 @@ body,html{
 }
 .Section_top{
     width: 100%;
-    height: 100%;
+    height: 130%;
     overflow: hidden;
     position: relative;
     background-image: url(images/image.jpg);
