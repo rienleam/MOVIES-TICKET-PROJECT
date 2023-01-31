@@ -1,12 +1,4 @@
-<<<<<<< HEAD
 <footer class="bg-warning text-white text-center text-lg-start">
-=======
-
-<?php 
-require "header.php"
-?>
-<footer class="bg-black text-white text-center text-lg-start">
->>>>>>> 13462404892f5d008fd5ef3aa13cc03017d75da7
   <!-- Grid container -->
   <div class="container p-4">
     <!--Grid row-->
@@ -58,12 +50,4 @@ require "header.php"
       </div>
     </div>
   </div>
-<<<<<<< HEAD
-  <!-- Grid container -->
 </footer>
-
-</body>  
-</html>
-=======
-</footer>
->>>>>>> 13462404892f5d008fd5ef3aa13cc03017d75da7

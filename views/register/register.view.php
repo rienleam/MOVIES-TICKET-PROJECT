@@ -36,7 +36,7 @@ session_start();
 
         <button id="login" type="submit" name = 'submit'>Sign up</button>
 
-        <p id="ask">Have an account? <a href="#"> Log In</a></p>
+        <p id="ask">Have an account? <a href="/login"> Log In</a></p>
         
     </form>
 

@@ -5,6 +5,7 @@
 
 ?>
 <link rel="stylesheet" href="views/css/style.register.view.css">
+
     <form action="#" method="post" class ='form'>
      	<h1>LOGIN</h1>
          <small class="form-text text-danger small"> <?php echo $massge_error?></small>

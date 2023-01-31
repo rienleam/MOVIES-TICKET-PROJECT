@@ -1,5 +1,4 @@
 
-<<<<<<< HEAD
 <?php
     require "database.php";
     $items = $conn->query(" SELECT * FROM list_shows");
@@ -33,11 +32,10 @@
     }
     ?>
 </div>
-=======
   <?php require "views/partials/header.php" ?>
   <?php require "views/partials/nav.php" ?>
 <div id="carouselExample" class="carousel slide">
-  <div class="carousel-inner">
+  <!-- <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="../../assets/images/avatar.jpg" class="d-block w-100" alt="First Slide">
     </div>
@@ -56,7 +54,6 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
-</div>
+</div> -->
 
 <?php require "views/partials/footer.php" ?>
->>>>>>> 13462404892f5d008fd5ef3aa13cc03017d75da7
