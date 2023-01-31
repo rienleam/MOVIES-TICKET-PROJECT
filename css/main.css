@@ -19,14 +19,6 @@ body,html{
     justify-content: center;
     animation: change 10s infinite ease-in-out;
 }
-/* .content{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-transform: uppercase;
-
-} */
 .content h1{
     color: #fff;
     font-size: 60px;
@@ -42,6 +34,7 @@ body,html{
     font-size: 18px;
     border-radius: 20px;
 }
+
 .content a:hover{
     background: #034e88;
     color: #fff;
@@ -49,11 +42,11 @@ body,html{
 @keyframes change{
     0%
     {
-        background-image: url(../assets/images/avatar.jpg);
+        background-image: url(../assets/images/The-Dead-Dont-Die.jpg);
     }
     20%
     {
-        background-image: url(../assets/images/avatar.jpg);
+        background-image: url(../assets/images/The-Dead-Dont-Die.jpg);
     }
     40%
     {
@@ -65,14 +58,17 @@ body,html{
     }
     80%
     {
-        background-image: url(../assets/images/batman.jpg);
+        background-image: url(../assets/images/Monster\ Hunter.jpeg);
     }
     100%
     {
-        background-image: url(../assets/images/batman.jpg);
+        background-image: url(../assets/images/Monster\ Hunter.jpeg);
     }
 }
 
+.container{
+    display: flex;
+}
 .container_card {
     width: 100%;
     display: flex;
