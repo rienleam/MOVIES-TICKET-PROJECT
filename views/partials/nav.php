@@ -1,9 +1,13 @@
+<<<<<<< HEAD
 <!-- Navbar -->
 <div class="container">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light fixed-top">
   <!-- Container wrapper -->
+=======
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top p-0 m-0">
+>>>>>>> 13462404892f5d008fd5ef3aa13cc03017d75da7
   <div class="container-fluid">
-    <!-- Toggle button -->
     <button
       class="navbar-toggler"
       type="button"
@@ -16,10 +20,15 @@
       <i class="fas fa-bars"></i>
     </button>
 
-    <!-- Collapsible wrapper -->
+ 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+<<<<<<< HEAD
       <!-- Navbar brand -->
       <a class="navbar-brand mt-lg-0" href="#">
+=======
+
+      <a class="navbar-brand mt-2 mt-lg-0" href="#">
+>>>>>>> 13462404892f5d008fd5ef3aa13cc03017d75da7
         <img
           src="../../assets/images/logo-remove-preview.png"
           height="50"
@@ -27,6 +36,7 @@
           alt="MT Logo"
         />
       </a>
+<<<<<<< HEAD
       <!-- Left links -->
       <ul class="navbar-nav me-auto mb-lg-0" style="width:50%">
         <li class="nav-item">
@@ -61,14 +71,28 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Login</a>
+=======
+      <div class="navbar-nav">
+      <a class="<?= urlIs('/') ? 'active bg-dark text-white' : '' ?> nav-link" href="/">Home <span class="sr-only"></span></a>
+      <a class="<?= urlIs('/movie') ? 'active bg-dark text-white' : '' ?> nav-link" href="/movie">Movies</a>
+      <a class="<?= urlIs('/About') ? 'active bg-dark text-white' : '' ?> nav-link" href="/About">About</a>
+      <a class="<?= urlIs('/Contact') ? 'active bg-dark text-white' : '' ?> nav-link" href="/Contact">Contact</a>
+    </div>
+    </div>
+    <div class="d-flex align-items-center">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="/login">Login</a>
+>>>>>>> 13462404892f5d008fd5ef3aa13cc03017d75da7
             </li>
       </ul>
       
     </div>
-    <!-- Right elements -->
   </div>
-  <!-- Container wrapper -->
 </nav>
+<<<<<<< HEAD
 </div>
 
 <!-- Navbar -->
+=======
+>>>>>>> 13462404892f5d008fd5ef3aa13cc03017d75da7
