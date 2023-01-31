@@ -1,7 +1,7 @@
 <?php
 session_start();
  require 'views/partials/header.php';
- require 'views/partials/nav.php';
+//  require 'views/partials/nav.php';
 ?>
 <link rel="stylesheet" href="views/css/style.register.view.css">
 <form action= "<?php $action ?>"  method="post">
@@ -34,7 +34,10 @@ session_start();
         <small class="form-text text-danger"> <?php echo $password_comfrm_error; ?></small>
 
         <button id="login" type="submit" name = 'submit'>Sign up</button>
-        <p id="ask">Have an account? <a href="#"> Log In</a></p> 
+
+        <p id="ask">Have an account? <a href="/login"> Log In</a></p>
+        
     </form>
+
 <?php
     require 'views/partials/footer.php';
