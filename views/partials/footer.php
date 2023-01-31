@@ -8,9 +8,8 @@ require "views/partials/header.php"
     <!--Grid row-->
     <div class="row">
       <!--Grid column-->
-      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+      <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
         <h5 class="text-uppercase text-warning">MOVIE</h5>
-
         <ul class="list-unstyled">
           <li>
             <a href="#!" class="text-white text-decoration-none ">NOW SHOWING</a>
@@ -27,11 +26,8 @@ require "views/partials/header.php"
         </ul>
       </div>
       <!--Grid column-->
-      
-      <!--Grid column-->
-      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+      <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
         <h5 class="text-uppercase text-warning">SYSTEM TYPE</h5>
-
         <ul class="list-unstyled">
           <li>
             <a href="#!" class="text-white text-decoration-none">4DX</a>
@@ -48,17 +44,14 @@ require "views/partials/header.php"
         </ul>
       </div>
       <!--Grid column-->
-
-      <!--Grid column-->
-      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+      <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
         <h5 class="text-uppercase text-warning">MOVIE LINE</h5>
-        <h1>097-73-48-624</h1>
+        <h3>097-73-48-624</h3>
         <i class="fa fa-facebook-official" aria-hidden="true"></i>
+        <i class="fa fa-telegram" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <i class="fa fa-line-chart" aria-hidden="true"></i>
       </div>
-      <!--Grid column-->
-
     </div>
-    <!--Grid row-->
   </div>
-  <!-- Grid container -->
 </footer>
