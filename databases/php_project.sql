@@ -83,10 +83,10 @@ CREATE TABLE `tickets` (
 
 CREATE TABLE `users` (
   `user_id` int(11) NOT NULL,
-  `First_name` varchar(15) NOT NULL,
-  `Last_name` varchar(15) NOT NULL,
-  `email` varchar(25) NOT NULL,
-  `password` varchar(20) NOT NULL,
+  `First_name` varchar(150) NOT NULL,
+  `Last_name` varchar(150) NOT NULL,
+  `email` varchar(250) NOT NULL,
+  `password` varchar(500) NOT NULL,
   `phone_number` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
