@@ -1,6 +1,6 @@
 
 <?php 
-require "views/partials/header.php"
+require "header.php"
 ?>
 <footer class="bg-black text-white text-center text-lg-start">
   <!-- Grid container -->
