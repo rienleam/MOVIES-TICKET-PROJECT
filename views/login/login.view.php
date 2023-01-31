@@ -11,14 +11,14 @@
         
      	<label>Email</label>
          <small class="form-text text-danger"> <?php echo $email_error?></small>
-     	<input type="text" name="email" placeholder="Email"?><br>
+     	<input type="text" name="email" placeholder="Email"?>
 
-     	<label>Password</label>
+     	<label class="mt-2" >Password</label>
          <small class="form-text text-danger"> <?php echo $password_error?></small>
      	<input type="password" name="password" placeholder="Password"><br>
 
-     	<button type="submit" class="btn btn-primary" name = 'submit'>Login</button>
-        <p>Do have any Account<a href="/register">Register Now</a></p>
+     	<button id="login" type="submit" class="btn btn-warning mt-2" name = 'submit'>Login</button>
+        <p id="ask" class="mt-3">Do have any Account <a href="/register"> Register Now</a></p>
      </form>
 
 <?php
