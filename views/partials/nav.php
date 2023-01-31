@@ -1,5 +1,6 @@
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light fixed-top">
+<div class="container">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light fixed-top">
   <!-- Container wrapper -->
   <div class="container-fluid">
     <!-- Toggle button -->
@@ -47,7 +48,7 @@
       <input type="text" name="search" class="form-control mt-2 mr-7"
       placeholder="Type here to search....">
       <br>
-      <button type="submit" name="submit" class="btn btn-success mt-2 mr-7">submit</button>
+      <button type="submit" name="submit" class="btn btn-success mt-2 mr-7 bg-warning border-warning">submit</button>
     </form>
     <!-- Collapsible wrapper -->
 
@@ -68,4 +69,6 @@
   </div>
   <!-- Container wrapper -->
 </nav>
+</div>
+
 <!-- Navbar -->
