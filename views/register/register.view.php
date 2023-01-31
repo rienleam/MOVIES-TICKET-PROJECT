@@ -1,7 +1,7 @@
 <?php
 session_start();
  require 'views/partials/header.php';
- require 'views/partials/nav.php';
+//  require 'views/partials/nav.php';
 ?>
 <link rel="stylesheet" href="views/css/style.register.view.css">
 <form action= "<?php $action ?>"  method="post">
