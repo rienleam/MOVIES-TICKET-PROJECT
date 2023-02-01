@@ -39,6 +39,9 @@ body,html{
     background: #034e88;
     color: #fff;
 }
+.carousel {
+    margin-top: 90px;
+}
 @keyframes change{
     0%
     {
