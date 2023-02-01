@@ -1,7 +1,7 @@
 body {
     width: 100%;
     height: 100vh;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: sans-serif;
     background: url(../../assets/images/background4.jpg);
     background-size: cover;
     display: flex;
@@ -44,7 +44,7 @@ form input {
     border-radius: 20px;
     box-sizing: border-box;
     border: none;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: sans-serif;
 }
 #login, #signup {
     width: 100%;
@@ -55,7 +55,7 @@ form input {
     border: none; 
     border-radius: 30px;
     font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: sans-serif;
 }
 
 #ask {

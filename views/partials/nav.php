@@ -43,10 +43,9 @@
       </ul>
       <!-- Left links -->
     </div>
-    <form action="search.php" method="post" class="d-flex flex-row m-3 gap-2" style="width:50%">
-      <input type="text" name="search" class="form-control mt-2 mr-7"
-      placeholder="Type here to search....">
-      <button type="submit" name="submit" class="btn btn-success mt-2 mr-7 bg-warning border-warning w-25">search</button>
+    <form action="search.php" method="post" class="d-flex flex-row m-3" style="width:50%">
+      <input type="text" name="search" class="searchbar rounded-start" placeholder="Type here to search....">
+      <button type="submit" name="submit" class="btn-search btn-success mr-7 bg-warning border-warning w-20 rounded-end">search</button>
     </form>
     <!-- Collapsible wrapper -->
 

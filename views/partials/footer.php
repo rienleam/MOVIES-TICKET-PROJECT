@@ -2,13 +2,13 @@
 <?php 
 require "header.php"
 ?>
-<footer class="bg-black text-white text-center text-lg-start">
+<footer>
   <!-- Grid container -->
-  <div class="container p-4">
+  <!-- <div class="container p-4"> -->
     <!--Grid row-->
-    <div class="row">
+    <div class="foot">
       <!--Grid column-->
-      <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+      <div class="link">
         <h5 class="text-uppercase text-warning">MOVIE</h5>
         <ul class="list-unstyled">
           <li>
@@ -26,7 +26,7 @@ require "header.php"
         </ul>
       </div>
       <!--Grid column-->
-      <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+      <div class="link">
         <h5 class="text-uppercase text-warning">SYSTEM TYPE</h5>
         <ul class="list-unstyled">
           <li>
@@ -44,14 +44,15 @@ require "header.php"
         </ul>
       </div>
       <!--Grid column-->
-      <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+      <div class="link">
         <h5 class="text-uppercase text-warning">MOVIE LINE</h5>
-        <h3>097-73-48-624</h3>
+        <h3 class="text-white">097-73-48-624</h3>
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
         <i class="fa fa-facebook-official" aria-hidden="true"></i>
         <i class="fa fa-telegram" aria-hidden="true"></i>
         <i class="fa fa-instagram" aria-hidden="true"></i>
-        <i class="fa fa-line-chart" aria-hidden="true"></i>
+        <i class="fa fa-youtube-play" aria-hidden="true"></i>
       </div>
     </div>
-  </div>
+  <!-- </div> -->
 </footer>

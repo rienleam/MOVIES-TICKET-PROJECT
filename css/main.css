@@ -39,6 +39,16 @@ body,html{
     background: #034e88;
     color: #fff;
 }
+.searchbar {
+    width: 85%;
+    padding: 10px;
+    border: none;
+}
+.btn-search {
+    width: 15%;
+    padding: 10px;
+    border: none;
+}
 .carousel {
     margin-top: 90px;
 }
