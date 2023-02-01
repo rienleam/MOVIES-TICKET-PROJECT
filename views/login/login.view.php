@@ -19,7 +19,7 @@
      	<input type="password" name="password" placeholder="Password"><br>
 
      	<button type="submit" class="btn btn-warning" name = 'submit'>Login</button>
-        <p>Do have any Account<a href="/register">Register Now</a></p>
+        <p id="ask">Do have any Account<a href="/register">Register Now</a></p>
      </form>
 
 <?php
