@@ -1,63 +1,57 @@
-<footer class="bg-warning text-white text-center text-lg-start">
+
+<?php 
+require "header.php"
+?>
+<footer class="bg-black text-white text-center text-lg-start">
   <!-- Grid container -->
   <div class="container p-4">
     <!--Grid row-->
     <div class="row">
       <!--Grid column-->
-      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-        <h5 class="text-uppercase">Footer Content</h5>
-
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-          molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
-          voluptatem veniam, est atque cumque eum delectus sint!
-        </p>
-      </div>
-      <!--Grid column-->
-
-      <!--Grid column-->
-      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-        <h5 class="text-uppercase">Links</h5>
-
-        <ul class="list-unstyled mb-0">
-          <li>
-            <a href="#!" class="text-white">Link 1</a>
-          </li>
-          <li>
-            <a href="#!" class="text-white">Link 2</a>
-          </li>
-          <li>
-            <a href="#!" class="text-white">Link 3</a>
-          </li>
-          <li>
-            <a href="#!" class="text-white">Link 4</a>
-          </li>
-        </ul>
-      </div>
-      <!--Grid column-->
-
-      <!--Grid column-->
-      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-        <h5 class="text-uppercase mb-0">Links</h5>
-
+      <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase text-warning">MOVIE</h5>
         <ul class="list-unstyled">
           <li>
-            <a href="#!" class="text-white">Link 1</a>
+            <a href="#!" class="text-white text-decoration-none ">NOW SHOWING</a>
           </li>
           <li>
-            <a href="#!" class="text-white">Link 2</a>
+            <a href="#!" class="text-white text-decoration-none">COMING SOON</a>
           </li>
           <li>
-            <a href="#!" class="text-white">Link 3</a>
+            <a href="#!" class="text-white text-decoration-none">CINEMAS</a>
           </li>
           <li>
-            <a href="#!" class="text-white">Link 4</a>
+            <a href="#!" class="text-white text-decoration-none">NEWS & ACTIVITY</a>
           </li>
         </ul>
       </div>
       <!--Grid column-->
+      <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase text-warning">SYSTEM TYPE</h5>
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" class="text-white text-decoration-none">4DX</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white text-decoration-none">IMAX</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white text-decoration-none">KIDS CINEMA</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white text-decoration-none">SCREEN X</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+      <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase text-warning">MOVIE LINE</h5>
+        <h3>097-73-48-624</h3>
+        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+        <i class="fa fa-telegram" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <i class="fa fa-line-chart" aria-hidden="true"></i>
+      </div>
     </div>
-    <!--Grid row-->
   </div>
-  <!-- Grid container -->
 </footer>
