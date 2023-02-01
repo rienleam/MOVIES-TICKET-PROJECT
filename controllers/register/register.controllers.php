@@ -1,4 +1,5 @@
 <?php
+
 require 'models/register.model.php';
 function validate_username(string $username) : bool
 {

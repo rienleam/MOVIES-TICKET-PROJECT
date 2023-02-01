@@ -31,12 +31,31 @@
       <a class="<?= urlIs('/Contact') ? 'active bg-dark text-white' : '' ?> nav-link" href="/Contact">Contact</a>
     </div>
     </div>
+    <?php
+  
+    if(!isset($_SESSION["email"]))
+      {
+      echo
+      '<div class="d-flex align-items-center">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link" href="/login">Login</a>
+              </li>
+        </ul>
+      </div>
+      ';
+    } 
+  else
+  {
+    echo
+    '
     <div class="d-flex align-items-center">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-                <a class="nav-link" href="/login">Login</a>
-            </li>
+        <li><a class="nav-link" href="/logout">Logout</a></li>
       </ul>
     </div>
+    ';
+  }
+    ?>
   </div>
 </nav>

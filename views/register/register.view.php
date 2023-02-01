@@ -1,5 +1,5 @@
 <?php
-session_start();
+
  require 'views/partials/header.php';
  require 'views/partials/nav.php';
 ?>

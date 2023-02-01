@@ -24,9 +24,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 {
     $email = $_POST['email'] ? $_POST['email'] : '';
     $passwordInput = $_POST['password'] ? $_POST['password'] : '';
-    if (empty($passwordInput))
+    
+    if (empty($passwordwordInput))
     {
-        $password_error = "password required";
+        $passwordword_error = "password required";
     }
     if (empty($email))
     {
@@ -35,30 +36,34 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
     else
     {
         $email_validate = validate_email($email);
-        // echo $email . "<br>";
          if ($email_validate)
          {
             $email_error = "Email required '@";
          }
         else{
-            $emailInput= getIdUser($email);
-            if (empty($emailInput))
+            $emailInside= getIdUser($email);
+            $nameInside= getIdUser($email);
+            if (empty($emailInside))
             {
-                $emailInput = '';
+                $emailInside = '';
             }
             else{
-                $emailInput = $emailInput= getIdUser($email)['email'];
+                $emailInside = $emailInside= getIdUser($email)['email'];
             }
-            if ($email == $emailInput )
+                // if(isset($_POST["login"]))
+                // { 
+                //     $_SESSION["email"]= $emailInside;
+                // }
+            if ($email == $emailInside )
             {
-                // $login = false;
-                $passwordInput  = $_POST['password'];
+                
+                $passwordwordInput  = $_POST['password'];
                 $db_password = user_password($email)['password']; // From Database
         
-                if(password_verify($passwordInput , $db_password)) {
-                    $_SESSION['email'] = $email;
+                if(password_verify($passwordwordInput , $db_password)) {
+                    $_SESSION['email'] = $emailInside;
                     header('location: /');
-                    // $login = true;
+                    $_SESSION['login'] = true;
                 } 
                 else{
                     $massge_error = "Email or password incorrect "; 
@@ -68,11 +73,12 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
             else 
             {
                 $massge_error = "Email or password incorrect "; 
-                $password_error = " ";
+                $passwordword_error = " ";
             }
         }
              
     }
+    
 }
 require 'views/login/login.view.php'; 
     
