@@ -1,7 +1,8 @@
 body {
     width: 100%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background: url(../../assets/images/back.jpg);
+    height: 100vh;
+    font-family: sans-serif;
+    background: url(../../assets/images/background4.jpg);
     background-size: cover;
     display: flex;
     justify-content: space-between;
@@ -13,7 +14,7 @@ body {
 }
 form, .form {
     margin-top: 50px;
-    width: 45%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     color: white;
@@ -21,11 +22,11 @@ form, .form {
     justify-content: center;
 }
 
-.form {
+/* .form {
     width: 30%;
-    height: 80vh;
-    
-}
+    height: 80vh; 
+} */
+
 h1 {
     text-align: center;
 }
@@ -43,17 +44,18 @@ form input {
     border-radius: 20px;
     box-sizing: border-box;
     border: none;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: sans-serif;
 }
-#login {
+#login, #signup {
     width: 100%;
     padding: 5px;
     margin: 30px 0px 10px 0px;
     background-color: yellow;
+    color: black;
     border: none; 
     border-radius: 30px;
     font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: sans-serif;
 }
 
 #ask {

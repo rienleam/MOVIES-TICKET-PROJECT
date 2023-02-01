@@ -10,7 +10,8 @@ function inputDataInToDB($firstname, $lastname, $email, $password, $phone)
     $stmt->execute([$firstname, $lastname, $email, $password, $phone]);
     
 }
-function getIdUser($email){
+function getIdUser($email)
+{
     global $connection;
     $statement = $connection->prepare("SELECT * FROM users WHERE email = :email;");
     $statement->execute([

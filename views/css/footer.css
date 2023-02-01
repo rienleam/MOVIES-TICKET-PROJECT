@@ -1,0 +1,18 @@
+.foot {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 60px 100px 60px 100px;
+}
+.link {
+    width: 33%;
+}
+.fa {
+    font-size: 30px;
+    color:white;
+    margin-right: 7px;
+}
+li a {
+    text-decoration: none;
+}
+

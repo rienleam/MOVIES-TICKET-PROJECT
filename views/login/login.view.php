@@ -1,10 +1,11 @@
 <?php 
 
  require 'views/partials/header.php';
- require 'views/partials/nav.php';
+//  require 'views/partials/nav.php';
 
 ?>
 <link rel="stylesheet" href="views/css/style.register.view.css">
+
     <form action="#" method="post" class ='form'>
      	<h1>LOGIN</h1>
          <small class="form-text text-danger small"> <?php echo $massge_error;?></small>
@@ -22,4 +23,4 @@
      </form>
 
 <?php
-    require 'views/partials/footer.php';
+    //require 'views/partials/footer.php';
