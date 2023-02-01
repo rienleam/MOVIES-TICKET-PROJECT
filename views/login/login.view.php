@@ -18,7 +18,7 @@
          <small class="form-text text-danger"> <?php echo $password_error?></small>
      	<input type="password" name="password" placeholder="Password"><br>
 
-     	<button type="submit" class="btn btn-primary" name = 'submit'>Login</button>
+     	<button type="submit" class="btn btn-warning" name = 'submit'>Login</button>
         <p>Do have any Account<a href="/register">Register Now</a></p>
      </form>
 
