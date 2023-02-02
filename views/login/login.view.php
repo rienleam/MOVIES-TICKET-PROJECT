@@ -18,8 +18,8 @@
      	<input type="password" name="password" placeholder="Password">
         <small class="form-text text-danger"> <?php echo $password_error?></small>
 
-     	<button type="submit" class="btn btn-primary" name = 'login'>Login</button>
-        <p>Do have any Account<a href="/register">Register Now</a></p>
+     	<button id="login" type="submit" class="btn btn-primary" name = 'login'>Login</button>
+        <p id="ask">Do have any Account<a href="/register">Register Now</a></p>
      </form>
 
 <?php
