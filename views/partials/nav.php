@@ -49,7 +49,7 @@
       <button type="submit" name="submit" class="btn-search rounded-end text-white">search</button>
     </form>
     <?php
-  
+    session_start();
     if(!isset($_SESSION["email"]))
       {
       echo
