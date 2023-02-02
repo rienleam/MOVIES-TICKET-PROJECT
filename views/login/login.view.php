@@ -7,19 +7,19 @@
 <link rel="stylesheet" href="views/css/style.register.view.css">
 
     <form action="#" method="post" class ='form'>
-     	<h1>LOGIN</h1>
-         <small class="form-text text-danger small"> <?php echo $massge_error;?></small>
+     	<h2>LOGIN</h2>
+         <small class="form-text text-danger small"> <?php echo $massge_error?></small>
         
      	<label>Email</label>
-         <small class="form-text text-danger"> <?php echo $email_error;?></small>
-     	<input type="text" name="email" placeholder="Email"?><br>
+     	<input type="text" name="email" placeholder="Email"?>
+        <small class="form-text text-danger"> <?php echo $email_error?></small>
 
-     	<label>Password</label>
-         <small class="form-text text-danger"> <?php echo $password_error;?></small>
-     	<input type="password" name="password" placeholder="Password"><br>
+     	<label class="mt-2">Password</label>
+     	<input type="password" name="password" placeholder="Password">
+        <small class="form-text text-danger"> <?php echo $password_error?></small>
 
-     	<button type="submit" class="btn btn-primary" name = 'login'>Login</button>
-        <p>Do have any Account<a href="/register">Register Now</a></p>
+     	<button id="login" type="submit" class="btn btn-primary" name = 'login'>Login</button>
+        <p id="ask">Do have any Account <a href="/register"> Register Now</a></p>
      </form>
 
 <?php

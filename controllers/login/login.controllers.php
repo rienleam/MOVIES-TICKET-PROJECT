@@ -25,9 +25,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
     $email = $_POST['email'] ? $_POST['email'] : '';
     $passwordInput = $_POST['password'] ? $_POST['password'] : '';
     
-    if (empty($passwordwordInput))
+    if (empty($passwordInput))
     {
-        $passwordword_error = "password required";
+        $password_error = "password required";
     }
     if (empty($email))
     {
