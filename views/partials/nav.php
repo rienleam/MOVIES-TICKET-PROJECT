@@ -50,7 +50,7 @@
       <button type="submit" name="submit" class="btn btn-success mt-2 mr-7 bg-warning border-warning w-25">search</button>
     </form>
     <?php
-  
+    session_start();
     if(!isset($_SESSION["email"]))
       {
       echo
