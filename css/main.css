@@ -120,3 +120,82 @@ body,html{
     margin-top: 8px;
     font-weight: bold;
 }
+.showlist {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin-top: 140px;
+    margin-bottom: 30px;
+}
+.heading {
+    color: orange;
+}
+.btn-add {
+    background-color: orange;
+    border-radius: 10px;
+    padding: 10px 30px 10px 30px;
+    font-weight: bold;
+}
+.number, .image, .theatername, .description, .cost, .dates, .times, .durations {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cardshows {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 20px;
+}
+.cardshows img {
+    width: 20%;
+    border-radius: 10px;
+}
+.details {
+    width: 65%;
+}
+.details p {
+    margin: 0;
+    padding: 0;
+}
+.theatername {
+    font-size: 20px;
+    font-weight: bold;
+}
+.description {
+    text-align: justify;
+    padding-right: 15px;
+}
+.action {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#edit, #delete {
+    padding: 10px;
+    border: 2px solid orange;
+    border-radius: 5px;
+    color: black;
+}
+#delete {
+    border: 2px solid red;
+}
+#edit:hover {
+    background-color: orange;
+    color: white;
+}
+#delete:hover {
+    background-color: red;
+    color: white;
+}
