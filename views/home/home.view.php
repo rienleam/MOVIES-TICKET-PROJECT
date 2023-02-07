@@ -1,5 +1,5 @@
 <?php
-  require "database.php";  
+  require "database.php";
   require "views/partials/header.php";
   require "views/partials/nav.php";
   $items = $conn->query(" SELECT * FROM list_shows");
@@ -53,9 +53,8 @@
                 <i class="large material-icons">access_alarms</i>
                 <p class="card-text"><?php echo $item['duration']; ?></p>
             </div>
-            <a href="#" class="btn details btn-outline-warning w-100 rounded-pill">Details</a>
+            <a href="/detail?show_id=<?= $item['show_id']?>" class="btn details btn-outline-warning w-100 rounded-pill">Details</a>
             <a href="#" class="btn book btn-outline-warning w-100 rounded-pill">Book Now</a>
-            
         </div>
         </div>
     <?php
