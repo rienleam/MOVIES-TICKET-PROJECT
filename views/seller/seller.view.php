@@ -1,7 +1,7 @@
 <?php
     // require "../../databases/database.php";
     require "databases/database.php";
-    $items = $conn->query("SELECT * FROM list_shows");
+    $items = $connection->prepare("SELECT * FROM list_shows");
 ?>
 <div class="showlist">
     <div class="title">
@@ -10,10 +10,10 @@
     </div>
    
     <?php 
-    foreach ($items as $item){ 
-    ?> 
+    foreach ($items as $item){
+    ?>
     <div class="cardshows">
-        <img src="../../assets/images/avatars.jpg" class="image" style="width: 20%;" />
+        <img src="<?= $item['imge']; ?>" class="image" style="width: 20%;" />
         <div class="details">
             <p class="theatername"><?php echo $item['show_name']; ?></p>
             <p class="description"><?php echo $item['description']; ?></p>
