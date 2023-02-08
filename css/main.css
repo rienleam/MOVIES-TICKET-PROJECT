@@ -120,6 +120,9 @@ body,html{
     margin-top: 8px;
     font-weight: bold;
 }
+
+/* seller view */
+
 .showlist {
     width: 100%;
     display: flex;
@@ -189,6 +192,7 @@ body,html{
     justify-content: space-around;
 }
 #edit, #delete {
+    width: 100%;
     padding: 10px;
     border: 2px solid orange;
     border-radius: 5px;
