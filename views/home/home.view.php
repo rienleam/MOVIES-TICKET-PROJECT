@@ -41,15 +41,15 @@
         <img src="<?php echo $item['image']; ?>" class="card-img-top" style = "width: 100%; height: 270px" alt="Fissure in Sandstone"/>
         <div class="card-body">
             <h4 class="card-title fw-bold"><?php echo $item['show_name']; ?></h4>
-            <div class="date">
+            <div class="date m-0">
                 <i class="large material-icons">date_range</i>
                 <p class="card-text"><?php echo $item['date']; ?></p>
             </div>
-            <div class="time">
+            <div class="time m-0">
                 <i class="large material-icons">alarm_on</i>
                 <p class="card-text"><?php echo $item['time']; ?></p>
             </div>
-            <div class="duration">
+            <div class="duration m-0">
                 <i class="large material-icons">access_alarms</i>
                 <p class="card-text"><?php echo $item['duration']; ?></p>
             </div>
