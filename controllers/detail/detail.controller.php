@@ -16,7 +16,7 @@ $movies = getDetailMovies($getID);
 
 <div class="card m-auto mt-5 p-4 mb-5" style="width: 90%;">
   <div class="row g-0">
-    <div class="col-md-4 p-3" style="width: 30%">
+    <div class="col-md-4 p-3" style="width: 40%">
       <img
         src="<?=$movies['image'];?>"
         alt="Trendy Pants and Shoes"
@@ -24,7 +24,7 @@ $movies = getDetailMovies($getID);
         style="width: 100%; height: 100%;"
       />
     </div>
-    <div class="col-md-7 pl-4 pr-3" style="width: 70%">
+    <div class="col-md-7 pl-4 pr-3" style="width: 60%">
       <div class="card-body">
         <h1 class="card-title text-warning"><b><?=$movies['show_name'];?></b></h1>
         <p class="card-text">
@@ -46,6 +46,14 @@ $movies = getDetailMovies($getID);
           <i class="large material-icons">access_alarms</i>
           <small class="text-muted"><?=$movies['duration'];?></small>
         </p>
+        <p class="card-text d-flex align-items-center m-0 mb-1">
+          <i class="large material-icons">call</i>
+          <small class="text-muted">097-73-48-624</small>
+        </p>
+        <p class="card-text d-flex align-items-center m-0 mb-1">
+          <i class="large material-icons">location_on</i>
+          <a href="https://goo.gl/maps/ovi9ijLrNgFTm5T36">រាជធានី, Street 2004, Phnom Penh 120802</a>
+        </p>
         <div class="user-click d-flex justify-content-between mt-3">
           <button type="button" class="btn btn-back btn-warning">BACK</button>
           <button type="button" class="btn btn-book btn-warning">BOOKING NOW</button>
@@ -54,6 +62,8 @@ $movies = getDetailMovies($getID);
     </div>
   </div>
 </div>
-
+<div class="video">
+  <?= $movies['trailer']; ?>
+</div>
 <?php
 require('views/partials/footer.php');

@@ -120,3 +120,18 @@ body,html{
 .btn-back, .btn-book {
     padding: 5px 40px 5px 40px;
 }
+
+/* video */
+
+.video {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;    
+}
+.video iframe {
+    width: 90%;
+    height: 100%;
+}
