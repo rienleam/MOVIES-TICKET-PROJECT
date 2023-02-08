@@ -8,7 +8,7 @@ $routes = [
     '/contcet' => 'controllers/contcet/contcet.controller.php',
     '/register' => 'controllers/register/register.controllers.php',
     '/login' => 'controllers/login/login.controllers.php',
-    '/logout' => 'controllers/logout/logout.controller.php',
+    '/logout' => 'controllers/logout/logout.controller.php'
 ];
 
 if (array_key_exists($uri, $routes)) {
