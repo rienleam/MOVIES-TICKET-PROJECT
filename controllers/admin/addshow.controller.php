@@ -21,6 +21,7 @@ $task_complete = 0;
         $date = $_POST['date'] ? $_POST['date'] : '';
         $time = $_POST['time'] ? $_POST['time'] : '';
         $duration = $_POST['duration'] ? $_POST['duration'] : '';
+        $isCancel = isset($_POST['cancel']) ? $_POST['cancel'] : '';
       
         if (empty($image)){
             $image_error = "Theater image required";
@@ -66,7 +67,7 @@ $task_complete = 0;
         }
         if ($task_complete == 7)
         {
-            header("Location: /");
+            header("Location: /movie");
         }
     }
 require '../../views/seller/addshow.view.php'; 

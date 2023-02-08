@@ -1,7 +1,7 @@
 <?php
-    require 'C:\Users\rien.leam\Desktop\MOVIES-TICKET-PROJECT\views\partials\header.php';
+    require '../../views/partials\header.php';
 ?>
-<link rel="stylesheet" href="C:\Users\rien.leam\Desktop\MOVIES-TICKET-PROJECT\views\css\addshow.css">
+<link rel="stylesheet" href="views\css\addshow.css">
 <div class="create">
     <form class="addshow-form" action= "<?php $action ?>"  method="post">
 
@@ -53,3 +53,4 @@
 
 
 <?php
+require '../../views/partials/footer.php';

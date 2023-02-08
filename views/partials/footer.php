@@ -1,7 +1,4 @@
 
-<?php 
-require "header.php"
-?>
 <footer>
   <!-- Grid container -->
   <!-- <div class="container p-4"> -->
