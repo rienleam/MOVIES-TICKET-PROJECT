@@ -43,7 +43,32 @@
       </ul>
       <!-- Left links -->
     </div>
+    <form action="search.php" method="post" class="d-flex flex-row m-3 gap-2" style="width:50%">
+      <input type="text" name="search" class="form-control mt-2 mr-7"
+      placeholder="Type here to search....">
+      <button type="submit" name="submit" class="btn btn-success mt-2 mr-7 bg-warning border-warning w-25">search</button>
+    </form>
+    <!-- Collapsible wrapper -->
+
+    <!-- Right elements -->
+    <div class="d-flex align-items-center mr-60">
+      <!-- Icon -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="/register">Register</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/login">Login</a>
+            </li>
+      </ul>
+      
     </div>
+  </div>
+</nav>
+</div>
+
+<!-- Navbar -->
+
     <?php
   
     if(!isset($_SESSION["email"]))

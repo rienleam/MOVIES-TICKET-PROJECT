@@ -20,7 +20,7 @@
     <img src="../../assets/images/starwar-back.jpg" class="d-block w-100" alt="Forth Slide">
   </div>
   <div class="carousel-item">
-    <img src="../../assets/images/starwar.jpg" class="d-block w-100" alt="Fifth Slide">
+    <img src="../../assets/images/cinema_bg.jpg" class="d-block w-100" alt="Fifth Slide">
   </div>
 </div>
 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -54,7 +54,7 @@
                 <p class="card-text"><?php echo $item['duration']; ?></p>
             </div>
             <a href="#" class="btn details btn-outline-warning w-100 rounded-pill">Details</a>
-            <a href="#" class="btn book btn-outline-warning w-100 rounded-pill">Book Now</a>
+            <a href="views\post\post.booking.view.php" class="btn book btn-outline-warning w-100 rounded-pill">Book Now</a>
             
         </div>
         </div>
