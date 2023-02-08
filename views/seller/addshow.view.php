@@ -1,5 +1,5 @@
 <?php
-    require 'C:\Users\rien.leam\Desktop\MOVIES-TICKET-PROJECT\views\partials\header.php';
+    require '../partials/header.php';
 ?>
 <link rel="stylesheet" href="C:\Users\rien.leam\Desktop\MOVIES-TICKET-PROJECT\views\css\addshow.css">
 <div class="create">
@@ -45,8 +45,8 @@
 
         </div>
         <div class="click-action">
-            <button id="cancel" name="cancel">Cancel</button>
-            <button id="addnew" type="submit" name="submit">Add New</button>  
+            <a href="/"><button id="cancel" name="cancel">Cancel</button></a>
+            <a href="/"><button id="addnew" type="submit" name="submit-add">Add New</button></a>
         </div>
     </form>
 </div>

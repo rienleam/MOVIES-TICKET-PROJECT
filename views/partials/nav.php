@@ -32,7 +32,7 @@
           <a class="nav-link" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../../controllers/admin/seller.php">Movies</a>
+          <a class="nav-link" href="../movie">Movies</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">About</a>

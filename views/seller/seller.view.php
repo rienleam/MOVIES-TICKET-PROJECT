@@ -1,5 +1,6 @@
 <?php
-    require "../../database.php";
+    // require "../../databases/database.php";
+    require "databases/database.php";
     $items = $conn->query("SELECT * FROM list_shows");
 ?>
 <div class="showlist">
