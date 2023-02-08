@@ -1,7 +1,8 @@
 
 <?php
-    require "database.php";
-    $items = $conn->query(" SELECT * FROM list_shows");
+    require "views/partials/header.php";
+    require "views/partials/nav.php";
+    $items = $connection->query(" SELECT * FROM list_shows");
 ?>
 <div class="container_card p-5  bg-dark d-flex">
     <?php 
@@ -32,3 +33,5 @@
     }
     ?>
 </div>
+<?php
+require "views/partials/footer.php";
