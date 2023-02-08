@@ -146,6 +146,12 @@ body,html{
     padding: 10px 30px 10px 30px;
     font-weight: bold;
 }
+.btn-add:hover {
+    -ms-transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+    background-color: rgb(245, 181, 63);
+}
 .details p {
     display: flex;
     justify-content: flex-start;
@@ -185,6 +191,9 @@ body,html{
 .description {
     text-align: justify;
     padding-right: 15px;
+}
+.cost, .dates, .times, .durations {
+    font-size: 14px;
 }
 .action {
     display: flex;
