@@ -1,5 +1,5 @@
 body,html{
-    background: #000;
+    background: #2c2b2b;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -90,15 +90,10 @@ body,html{
     flex-wrap: wrap;
 }
 
-
+/* detail */
 .card{
     width: 22%;
 }
-/* .card:hover {
-    -ms-transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
-} */
 .card-body {
     display: flex;
     flex-direction: column;
@@ -121,4 +116,7 @@ body,html{
 .btn {
     margin-top: 8px;
     font-weight: bold;
+}
+.btn-back, .btn-book {
+    padding: 5px 40px 5px 40px;
 }

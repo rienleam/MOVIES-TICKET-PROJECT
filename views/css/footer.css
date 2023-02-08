@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 60px 100px 60px 100px;
+    background-color: #000;
 }
 .link {
     width: 33%;
