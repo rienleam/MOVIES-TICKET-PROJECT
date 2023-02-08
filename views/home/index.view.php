@@ -1,5 +1,8 @@
 
 <?php
+    require "views/partials/header.php";
+    require "views/partials/nav.php";
+    $items = $connection->query(" SELECT * FROM list_shows");
     require "databases/database.php";
     $items = $connection->query(" SELECT * FROM list_shows");
 ?>
@@ -32,3 +35,5 @@
     }
     ?>
 </div>
+<?php
+require "views/partials/footer.php";
