@@ -16,15 +16,13 @@ $movies = getDetailMovies($getID);
 
 <div class="card m-auto mt-5 p-4 mb-5" style="width: 90%;">
   <div class="row g-0">
-    <div class="col-md-4 p-3" style="width: 40%">
-      <img
-        src="<?=$movies['image'];?>"
-        alt="Trendy Pants and Shoes"
-        class="img-fluid rounded-start"
-        style="width: 100%; height: 100%;"
-      />
+    <div class="col-md-4 p-4" style="width: 50%">
+      <div class="video">
+        <?= $movies['trailer']; ?>
+      </div>
+
     </div>
-    <div class="col-md-7 pl-4 pr-3" style="width: 60%">
+    <div class="col-md-7 pl-3 pr-3" style="width: 50%">
       <div class="card-body">
         <h1 class="card-title text-warning"><b><?=$movies['show_name'];?></b></h1>
         <p class="card-text">
@@ -32,7 +30,7 @@ $movies = getDetailMovies($getID);
         </p>
         <p class="card-text d-flex align-items-center m-0 mb-1">
         <i class="large material-icons">business_center</i> 
-          <small class="text-muted">$<?=$movies['cost'];?></small>
+          <small class="text-muted">$<?=$movies['cost'];?>/1 seat</small>
         </p>
         <p class="card-text d-flex align-items-center m-0 mb-1">
           <i class="large material-icons">date_range</i>
@@ -62,8 +60,6 @@ $movies = getDetailMovies($getID);
     </div>
   </div>
 </div>
-<div class="video">
-  <?= $movies['trailer']; ?>
-</div>
+
 <?php
 require('views/partials/footer.php');
