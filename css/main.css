@@ -186,3 +186,47 @@ body,html{
     width: 100%;
     border-radius: 5px;
 }
+
+/* contact us page */
+
+.contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3d3b3b;
+    padding: 130px 0px 80px 0px;
+    color: white;
+}
+.message {
+    width: 88%;
+    display: flex;
+    justify-content: space-between;
+}
+hr {
+    border: 3px solid black;
+}
+.position, .form-contact {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+.username, .e-mail, .telephone, .topic, .chat-message {
+    width: 100%;
+    display: flex;
+}
+.label {
+    width: 20%;
+    font-weight: bold;
+    color: orange;
+}
+.input {
+    width: 80%;
+}
+.send {
+    background-color: orange;
+    color: white;
+    padding: 10px 30px 10px 30px;
+    border: none;
+    margin-left: 20%;
+}
