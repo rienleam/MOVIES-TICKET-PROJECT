@@ -1,4 +1,9 @@
 <!-- Navbar -->
+<?php
+
+session_start();
+
+?>
 <div class="container">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light fixed-top">
   <!-- Container wrapper -->
@@ -49,7 +54,7 @@
       <button type="submit" name="submit" class="btn-search rounded-end text-white">search</button>
     </form>
     <?php
-    session_start();
+
     if(!isset($_SESSION["email"]))
       {
       echo
