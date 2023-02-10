@@ -32,7 +32,7 @@ session_start();
         />
       </a>
       <!-- Left links -->
-      <ul class="navbar-nav me-auto mb-lg-0" style="width:50%">
+      <ul class="navbar-nav me-auto mb-lg-0" style="width:60%">
         <li class="nav-item">
           <a class="nav-link" href="/">Home</a>
         </li>
@@ -40,10 +40,10 @@ session_start();
           <a class="nav-link" href="/movie">Movies</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="/about">About us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="/contact">Contact us</a>
         </li>
       </ul>
       <!-- Left links -->
