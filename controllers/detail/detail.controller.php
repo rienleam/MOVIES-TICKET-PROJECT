@@ -53,7 +53,9 @@ $movies = getDetailMovies($getID);
           <a href="https://goo.gl/maps/ovi9ijLrNgFTm5T36">រាជធានី, Street 2004, Phnom Penh 120802</a>
         </p>
         <div class="user-click d-flex justify-content-between mt-3">
-          <button type="button" class="btn btn-back btn-warning">BACK</button>
+          <a href="/">
+            <button type="button" class="btn btn-back btn-warning">BACK</button>
+          </a>
           <button type="button" class="btn btn-book btn-warning">BOOKING NOW</button>
         </div>
       </div>
