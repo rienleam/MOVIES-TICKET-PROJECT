@@ -1,21 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>seller Admin</title>
-    <link rel="stylesheet" href="main.css">
-</head>
-<body>
-    <form>
-        <h2>LOGIN</h2>
-        <label>User Name</label>
-        <input type="text" name="uname"placeholder ="User Name"><br>
+<?php 
+$message = '';
+if (isset($_POST['uname']) && isset($_POST['password'])){
+    function validate($data){
+        $data  = trim($data);
+        $data = stripcslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+    }
+    $uname = $_POST['uname'];
+    $pass =$_POST['password'];
 
-        <label>User Password</label>
-        <input type="password" name="password" placeholder ="password"><br>
-
-        <button type ="submit">Login</button>
-    </form>
-</body>
+    if (empty($uname)){
+        // header("Location: index.php?error = User Name is required ");
+        $message = 'username required';
+        exit();
+    }else if(empty($pass)){
+        // header("Location: index.php?error = Password is required");
+        exit();
+    }
+}else{
+    // header("Location: index.php");
+    exit();
+}
+// require 'index.php';
+?>
