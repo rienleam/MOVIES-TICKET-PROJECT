@@ -13,7 +13,7 @@
         <hr>
         <div class="form-contact">
             <h2 class="text-warning mb-4"><b>Contact Us</b></h2>
-            <form class="chat">
+            <form class="chat" action= "<?php $action ?>"  method="post">
                 <div class="username mb-3">
                     <div class="label">
                         <label class="mt-1" for="username">Your name</label>

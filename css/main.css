@@ -203,8 +203,13 @@ body,html{
 .staff img {
     width: 100%;
     border-radius: 5px;
+    border: 2px solid orange;
 }
-
+.staff:hover {
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
 /* contact us page */
 
 .contact {

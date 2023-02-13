@@ -26,7 +26,7 @@
         <h1 class="text-warning mt-5 mb-4">Our People</h1>
         <div class="staffs">
             <div class="staff">
-                <img src="../../assets/images/rien1.jpg">
+                <img src="../../assets/images/rien.jpg">
                 <h3 class="text-warning pt-3">Rien Leam</h3>
                 <h5 class="text-white">Task Manager</h5>
             </div>
@@ -36,17 +36,17 @@
                 <h5 class="text-white">Git Manager</h5>
             </div>
             <div class="staff">
-                <img src="../../assets/images/rien1.jpg">
+                <img src="../../assets/images/cheat.jpg">
                 <h3 class="text-warning pt-3">Socheat Lun</h3>
                 <h5 class="text-white">Test Manager</h5>
             </div>
             <div class="staff">
-                <img src="../../assets/images/rien1.jpg">
+                <img src="../../assets/images/makara.jpg">
                 <h3 class="text-warning pt-3">Makara Yuern</h3>
                 <h5 class="text-white">Code Quality</h5>
             </div>
             <div class="staff">
-                <img src="../../assets/images/rien1.jpg">
+                <img src="../../assets/images/seyla.jpg">
                 <h3 class="text-warning pt-3">Seyla Loeub</h3>
                 <h5 class="text-white">UI Manager</h5>
             </div>
