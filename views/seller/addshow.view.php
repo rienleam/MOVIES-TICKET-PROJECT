@@ -8,7 +8,7 @@
         <h2 class="mb-2 text-warning">Create New Theater</h2>
 
         <label class="mt-1" for="theater-image">Theater Image</label>
-        <input type="text" name="theater-image" placeholder="Enter theater image">
+        <input type="file" name="theater-image">
         <small class="form-text text-danger"> <?php echo $image_error; ?></small>
 
         <label class="mt-1" for="theater-name">Theater Name</label>
