@@ -14,8 +14,7 @@
     >
       <i class="fas fa-bars"></i>
     </button>
-
- 
+    
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <!-- Navbar brand -->
       <a class="navbar-brand mt-lg-0" href="#">
@@ -55,8 +54,8 @@
       echo
       '<div class="d-flex align-items-center">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                  <a class="nav-link" href="/login">Login</a>
+          <i class="material-icons">person</i>
+                <a class="nav-link" href="/login">Login</a>
               </li>
         </ul>
       </div>
