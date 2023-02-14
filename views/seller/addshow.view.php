@@ -1,15 +1,15 @@
 <?php
-    require '../../views/partials\header.php';
+    require '../../views/partials/header.php';
+
+
 ?>
-<link rel="stylesheet" href="views\css\addshow.css">
+<link rel="stylesheet" href="views/css/addshow.css">
 <div class="create">
     <form class="addshow-form" action= "<?php $action ?>"  method="post">
 
-        <h2 class="mb-2 text-warning">Create New Theater</h2>
+        <h2 class="mb-2 text-warning">Create New Theater </h2>
 
-        <label class="mt-1" for="theater-image">Theater Image</label>
-        <input type="text" name="theater-image" placeholder="Enter theater image">
-        <small class="form-text text-danger"> <?php echo $image_error; ?></small>
+        
 
         <label class="mt-1" for="theater-name">Theater Name</label>
         <input type="text" name="theater-name" placeholder="Enter theater name">
@@ -18,6 +18,10 @@
         <label class="mt-1" for="description">Description</label>
         <input type="text" name="description" placeholder="Enter theater description">
         <small class="form-text text-danger"> <?= $description_error; ?></small>
+
+        <label class="mt-1" for="theater-trailer">Theater Trailer</label>
+        <input type="text" name="theater-trailer" placeholder="Enter theater image">
+        <small class="form-text text-danger"> <?php echo $trailer_error; ?></small>
 
         <div class="cost-date">
             <div class="the-cost">
@@ -44,9 +48,13 @@
             </div>
 
         </div>
+        
+        <label class="mt-1" for="th-im">Theater Image</label>
+        <input type="file" class="th-im" name="theater-image"  placeholder="Enter theater image">
+        <small class="form-text text-danger"> <?php echo $image_error; ?></small>
         <div class="click-action">
-            <a href="/"><button id="cancel" name="cancel">Cancel</button></a>
-            <a href="/"><button id="addnew" type="submit" name="submit-add">Add New</button></a>
+            <a href="/"><button id="cancel" name="button" value="0">Cancel</button></a>
+            <a href="/"><button id="addnew" type="submit" name="button" value="1">Add New</button></a>
         </div>
     </form>
 </div>
