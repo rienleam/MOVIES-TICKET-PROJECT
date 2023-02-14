@@ -59,7 +59,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $task_complete += 1;
     }
     if ($task_complete == 5) {
-        inputDataInToDB($username, $telephone, $e_mail, $topic, $message);
         header("Location: /");
     }
 }
