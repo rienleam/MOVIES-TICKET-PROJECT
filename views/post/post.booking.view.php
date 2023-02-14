@@ -8,22 +8,19 @@ require '../partials/header.php';
     <div class="status_seats1 m-2">
         <h4>Seats: </h4>
         <label class="checkbox" for="myCheckboxId">
-            <input type="checkbox border border-danger" class="ckeckbox__input" id="myCheckboxId">
-            <input type="checkbox" class="ckeckbox__box1">Sold
+        <i class="fa fa-stop fa-sold bg-info text-info" aria-hidden="true"></i><span class="sold">Sold</span> 
         </label>
     </div>
     <div class="status_seats2 m-2">
         <h4>Price: </h4>
         <label class="checkbox" for="myCheckboxId">
-            <input type="checkbox" class="ckeckbox__input" id="myCheckboxId">
-            <input type="checkbox" class="ckeckbox__box2">Selected
+        <i class="fa fa-stop fa-selected bg-warning text-warning" aria-hidden="true"></i><span class="select">Selected</span> 
         </label>
     </div>
     <div class="status_seats3 m-2">
         <h4>Time: </h4>
         <label class="checkbox" for="myCheckboxId">
-            <input type="checkbox" class="ckeckbox__input" id="myCheckboxId">
-            <input type="checkbox" class="ckeckbox__box3">Available
+        <i class="fa fa-stop fa-available bg-danger text-danger" aria-hidden="true"></i><span class="available">Available</span> 
         </label>
     </div>
     <div class="checkboxs m-3">

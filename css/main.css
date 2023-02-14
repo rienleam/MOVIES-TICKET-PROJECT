@@ -158,18 +158,32 @@ hr{
     display: flex;
     justify-content: space-between;
 }
+
 .ckeckbox__box{
     accent-color: red;
 }
 .ckeckbox__box1{
     margin-right: 40px;
-    accent-color: orange;
 }
 .ckeckbox__box2{
     margin-right: 4px;
-    accent-color: red;
 }
-.ckeckbox__box3{
-    accent-color: blue;
+.fa-stop{
+    width: 30px;
+    height: 30px;
 }
-
+.fa-selected{
+    margin-right: 4px;
+}
+.fa-sold{
+    margin-right: 5px;
+}
+.sold{
+    margin-right: 42px;
+}
+.fa-available{
+    margin-right: 4px;
+}
+.select{
+    margin-right: 5px;
+}
