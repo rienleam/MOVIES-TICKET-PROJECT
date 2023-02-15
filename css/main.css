@@ -160,7 +160,7 @@ body,html{
     align-items: center;
 }
 
-.cardshows {
+.cardshows-container {
     width: 90%;
     display: flex;
     justify-content: space-between;
@@ -168,17 +168,17 @@ body,html{
     margin-bottom: 25px;
     background-color: white;
     border: 2px solid orange;
-    padding: 20px;
 }
-.cardshows:hover {
+.cardshows-container:hover {
     -ms-transform: scale(1.01);
     -webkit-transform: scale(1.01);
     transform: scale(1.01);
 }
-.cardshows img {
+.cardshows-container img {
     width: 20%;
-    border-radius: 10px;
 }
+
+/* detail */
 .details {
     width: 65%;
 }
@@ -225,7 +225,7 @@ body,html{
 
 .create {
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     display: flex;
     justify-content: flex-start;
     padding: 0;
