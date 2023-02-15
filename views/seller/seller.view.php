@@ -1,7 +1,7 @@
 <?php
     require "views/partials/header.php";
     require "views/partials/nav.php";
-    require "database.php";
+    require "databases/database.php";
     $items = $connection->query("SELECT * FROM list_shows");
 ?>
 <link rel="stylesheet" href="views/css/seller.view.css">
