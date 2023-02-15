@@ -105,7 +105,6 @@ if ($isbutton == 0)
        
                    $allowed_ex = array('jpg', 'jpeg', 'png');
                    if(in_array($img_ex_lower, $allowed_ex)){
-                        // $new_img_name = $image_name .'.'.$img_ex_lower;
                         $folder = '../../assets/images/'. $image_name;
                         move_uploaded_file($tmp_name, $folder);
                         inputShowInToDB($theatername, $date, $cost,$description,$time, $duration, $trailer,$image_name);
