@@ -49,13 +49,8 @@
 
         </div>
         
-<<<<<<< HEAD
         <label class="mt-1" for="theater-image">Theater Image</label>
         <input type="file" class="theater-image" name="theater-image"  placeholder="Enter theater image">
-=======
-        <label class="mt-1" for="image">Theater Image</label>
-        <input type="file" class="image" name="image">
->>>>>>> c66186d9392503b1decb6395ff04cab87018431a
         <small class="form-text text-danger"> <?php echo $image_error; ?></small>
 
         <div class="click-action">
