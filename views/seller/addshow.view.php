@@ -20,7 +20,7 @@
         <small class="form-text text-danger"> <?= $description_error; ?></small>
 
         <label class="mt-1" for="theater-trailer">Theater Trailer</label>
-        <input type="text" name="theater-trailer" placeholder="Enter theater image">
+        <input type="text" name="theater-trailer" placeholder="Enter theater trailer(link)">
         <small class="form-text text-danger"> <?php echo $trailer_error; ?></small>
 
         <div class="cost-date">
