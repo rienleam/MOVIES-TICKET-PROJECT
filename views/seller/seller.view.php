@@ -15,7 +15,7 @@
     foreach ($items as $item){
     ?>
     <div class="cardshows">
-        <img src="<?= $item['image'];?>" class="image p-1" style="width: 20%; "/>
+        <img src=" <?php echo 'assets/images/'. $item['image'];?>" class="image p-1" style="width: 20%; "/>
         <div class="details">
             <p class="theatername"><?php echo $item['show_name']; ?></p>
             <p class="description mt-2 mb-2"><?php echo $item['description']; ?></p>

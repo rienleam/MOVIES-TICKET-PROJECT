@@ -5,7 +5,7 @@
 ?>
 <link rel="stylesheet" href="views/css/addshow.css">
 <div class="create">
-    <form class="addshow-form" action= "<?php $action ?>"  method="post">
+    <form class="addshow-form" action= "#"  method="post" enctype="multipart/form-data">
 
         <h2 class="mb-2 text-warning">Create New Theater </h2>
 
@@ -49,9 +49,10 @@
 
         </div>
         
-        <label class="mt-1" for="th-im">Theater Image</label>
-        <input type="file" class="th-im" name="theater-image"  placeholder="Enter theater image">
+        <label class="mt-1" for="theater-image">Theater Image</label>
+        <input type="file" class="theater-image" name="theater-image"  placeholder="Enter theater image">
         <small class="form-text text-danger"> <?php echo $image_error; ?></small>
+
         <div class="click-action">
             <a href="/"><button id="cancel" name="button" value="0">Cancel</button></a>
             <a href="/"><button id="addnew" type="submit" name="button" value="1">Add New</button></a>

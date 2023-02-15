@@ -23,7 +23,6 @@ if ($isbutton == 0)
 }
    if($_SERVER['REQUEST_METHOD'] == 'POST')
    {
-        $image = $_POST['theater-image'] ? $_POST['theater-image'] : '';
         $theatername = $_POST['theater-name'] ? $_POST['theater-name'] : '';
         $description = $_POST['description'] ? $_POST['description'] : '';
         $cost = $_POST['cost'] ? $_POST['cost'] : '';
@@ -31,10 +30,11 @@ if ($isbutton == 0)
         $time = $_POST['time'] ? $_POST['time'] : '';
         $duration = $_POST['duration'] ? $_POST['duration'] : '';
         $trailer = $_POST['theater-trailer'] ? $_POST['theater-trailer'] : '';
+        $image_name = $_FILES['theater-image']['name'];
 
        
         
-        if (empty($image)){
+        if (empty($image_name)){
             $image_error = "Theater image required";
         }
         else{
@@ -93,30 +93,22 @@ if ($isbutton == 0)
         if ($task_complete == 8)
         {
             require "../../databases/database.php";
-            $duration_error = $_FILES[$image]['name'];
-            if (isset($_FILES[$image]['name']) AND !empty($_FILES[$image]['name'])){
-                $img_name = $_FILES[$image]['name'];
-                $tmp_name = $_FILES[$image]['tmp_name'];
-                $error = $_FILES[$image]['error'];
+            if (isset($_POST["button"]) == 1){
+                $img_type = $_FILES['theater-image']['type'];
+                $tmp_name = $_FILES['theater-image']['tmp_name'];
+                $error = $_FILES['theater-image']['error'];
                 
-                $duration_error = $duration;
-                $time_error = $time;
-                $date_error = $date;
-                $cost_error = $cost;
-                $description_error = $description;
-                $theatername_error = $theatername;
-                $trailer_error  = $trailer;
-                $image_error = $image;
+                
                 if($error === 0){
-                   $img_ex = pathinfo($img_name, PATHINFO_EXTENSION);
-                   $img_ex_to_lc = strtolower($img_ex);
+                    $img_ex = pathinfo($image_name, PATHINFO_EXTENSION);
+                    $img_ex_lower = strtolower($img_ex);
        
-                   $allowed_exs = array('jpg', 'jpeg', 'png');
-                   if(in_array($img_ex_to_lc, $allowed_exs)){
-                        $new_img_name = uniqid($theatername, true).'.'.$img_ex_to_lc;
-                        $img_upload_path = '../assets/images/'.$new_img_name;
-                        move_uploaded_file($tmp_name, $img_upload_path);
-                        inputShowInToDB($theatername, $date, $cost,$description,$time, $duration, $new_img_name, $trailer);
+                   $allowed_ex = array('jpg', 'jpeg', 'png');
+                   if(in_array($img_ex_lower, $allowed_ex)){
+                        // $new_img_name = $image_name .'.'.$img_ex_lower;
+                        $folder = '../../assets/images/'. $image_name;
+                        move_uploaded_file($tmp_name, $folder);
+                        inputShowInToDB($theatername, $date, $cost,$description,$time, $duration, $trailer,$image_name);
                         header("Location: /movie");
                    }
                 }
