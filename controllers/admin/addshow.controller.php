@@ -23,7 +23,6 @@ if ($isbutton == 0)
 }
    if($_SERVER['REQUEST_METHOD'] == 'POST')
    {
-<<<<<<< HEAD
         $theatername = $_POST['theater-name'] ? $_POST['theater-name'] : '';
         $description = $_POST['description'] ? $_POST['description'] : '';
         $cost = $_POST['cost'] ? $_POST['cost'] : '';
@@ -36,20 +35,6 @@ if ($isbutton == 0)
        
         
         if (empty($image_name)){
-=======
-       $theatername = $_POST['theater-name'] ? $_POST['theater-name'] : '';
-       $description = $_POST['description'] ? $_POST['description'] : '';
-       $cost = $_POST['cost'] ? $_POST['cost'] : '';
-       $date = $_POST['date'] ? $_POST['date'] : '';
-       $time = $_POST['time'] ? $_POST['time'] : '';
-       $duration = $_POST['duration'] ? $_POST['duration'] : '';
-       $trailer = $_POST['theater-trailer'] ? $_POST['theater-trailer'] : '';
-       $theaterimage = $_POST['theater-image'] ? $_POST['theater-image'] : '';
-
-       
-        
-        if (empty($theaterimage)){
->>>>>>> c66186d9392503b1decb6395ff04cab87018431a
             $image_error = "Theater image required";
         }
         else{
