@@ -14,9 +14,9 @@
     <?php 
     foreach ($items as $item){
     ?>
-    <div class="cardshows">
-        <img src="<?= $item['image'];?>" class="image p-1" style="width: 20%; "/>
-        <div class="details">
+    <div class="cardshows-container">
+        <img src="<?= $item['image'];?>" class="image p-2" style="width: 20%;"/>
+        <div class="details p-2">
             <p class="theatername"><?php echo $item['show_name']; ?></p>
             <p class="description mt-2 mb-2"><?php echo $item['description']; ?></p>
             <p class="cost"><i class="large material-icons">business_center</i> $<?php echo $item['cost']; ?></p>
@@ -25,8 +25,8 @@
             <p class="durations"><i class="large material-icons">access_alarms</i><?php echo $item['duration']; ?></p>
         </div>
         <div class="action" style="width: 10%">
-        <a href=""><button id="edit">Edit</button></a>
-        <a href=""><button id="delete">Delete</button></a>
+        <a href=""><button id="edit" style="width: 80%; ">Edit</button></a>
+        <a href=""><button id="delete" style="width: 80%; ">Delete</button></a>
         </div>
     </div>
     <?php
