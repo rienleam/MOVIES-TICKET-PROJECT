@@ -5,8 +5,6 @@ require "views/partials/header.php";
 require "views/partials/nav.php";
 ?>
 
-
-
 <?php $search = $_POST['search'];?>
 <!-- <div class="container d-flex">
   <div class="row align-items center">
