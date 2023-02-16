@@ -1,4 +1,4 @@
 <?php
 require 'views/partials/header.php';
 ?>
-<h1>Sucessfull</h1>
+<h1 class="text-white">Sucessfull</h1>
