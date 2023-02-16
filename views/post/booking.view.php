@@ -49,7 +49,7 @@ session_start();
                 <button type="button" name="submit" class="btn cancel-booking bg-warning">Cancel</button>
             </a>
             <a href="/printable">
-                <button type="submit" name="submit" class="pay-now bg-warning">Pay now</button>
+                <button type="submit" name="submit" class="btn pay-now bg-warning">Pay now</button>
             </a>
         </div>
     </form>
