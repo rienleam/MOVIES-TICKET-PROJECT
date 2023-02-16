@@ -1,8 +1,8 @@
 <?php
-  require "database.php";
+  require "databases/database.php";
   require "views/partials/header.php";
   require "views/partials/nav.php";
-  $items = $conn->query(" SELECT * FROM list_shows");
+  $items = $connection->query(" SELECT * FROM list_shows");
 ?>
 
 <div id="carouselExample" class="carousel slide">
