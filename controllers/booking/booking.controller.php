@@ -9,7 +9,7 @@ $task_complete = 0;
 if($_SERVER['REQUEST_METHOD'] == 'POST')
 {
     $number_ticket = $_POST["ticket-number"] ? $_POST["ticket-number"] : '';
-    $payment = $_POST["choose-payment"] ? $_POST["choose-payment"] : '';
+    $payment = (isset($_POST["choose-payment"])) ? (isset($_POST["choose-payment"])) : '';
 
     if (empty($number_ticket))
     {
@@ -29,6 +29,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
     }
     if ($task_complete == 2)
     {
-        header("Location: /");
+        header("Location: /printable");
     }
 }
+require('views/post/booking.view.php');

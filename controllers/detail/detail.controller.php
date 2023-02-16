@@ -56,7 +56,9 @@ $movies = getDetailMovies($getID);
           <a href="/">
             <button type="button" class="btn btn-back btn-warning">BACK</button>
           </a>
-          <button type="button" class="btn btn-book btn-warning">BOOKING NOW</button>
+          <a href="/booking">
+            <button type="button" class="btn btn-book btn-warning">BOOKING NOW</button>
+          </a>
         </div>
       </div>
     </div>

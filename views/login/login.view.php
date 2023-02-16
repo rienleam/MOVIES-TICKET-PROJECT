@@ -1,7 +1,6 @@
 <?php 
 
  require 'views/partials/header.php';
-//  require 'views/partials/nav.php';
 
 ?>
 <link rel="stylesheet" href="views/css/style.register.view.css">

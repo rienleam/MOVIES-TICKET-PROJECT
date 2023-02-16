@@ -12,6 +12,8 @@ $routes = [
     '/detail' => 'controllers/detail/detail.controller.php',
     '/about' => 'controllers/about/about.controller.php',
     '/contact' => 'controllers/contact/contact.controller.php',
+    '/booking' => 'controllers/booking/booking.controller.php',
+    '/printable' => 'controllers/booking/printable.controller.php',
 ];
 
 if (array_key_exists($uri, $routes)) {
