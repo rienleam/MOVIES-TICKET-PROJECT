@@ -25,11 +25,12 @@
             <p class="durations"><i class="large material-icons">access_alarms</i><?php echo $item['duration']; ?></p>
         </div>
         <div class="action" style="width: 10%">
-        <a href=""><button id="edit" style="width: 80%; ">Edit</button></a>
+        <a href="/edit?show_id=<?= $item['show_id']?>"><button id="edit" style="width: 80%; ">Edit</button></a>
         <a href=""><button id="delete" style="width: 80%; ">Delete</button></a>
         </div>
     </div>
     <?php
     }
+    
     ?>
 </div>
