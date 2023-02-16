@@ -21,7 +21,7 @@ require "views/partials/nav.php";
 <?php
 
 //connect ot the database
-require 'conn.php';
+require 'databases/database.php';
 //get the search keyword
 $search = $_POST['search'];
 //SQL query to get the products based on the search keyword
@@ -29,7 +29,7 @@ $sql = "SELECT * FROM list_shows WHERE show_name LIKE
 '%$search%' OR date LIKE '%$search%' OR Time LIKE '%$search%'
 ";
 //execute the query
-$res = mysqli_query($conn, $sql);
+$res = mysqli_query($connection, $sql);
 //count the rows
 $count = mysqli_num_rows($res);
 //check whether the product is available

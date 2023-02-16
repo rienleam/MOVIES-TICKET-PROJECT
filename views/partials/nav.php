@@ -1,4 +1,9 @@
 <!-- Navbar -->
+<?php
+
+session_start();
+
+?>
 <div class="container">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light fixed-top">
   <!-- Container wrapper -->
@@ -27,50 +32,29 @@
         />
       </a>
       <!-- Left links -->
-      <ul class="navbar-nav me-auto mb-lg-0" style="width:50%">
+      <ul class="navbar-nav me-auto mb-lg-0" style="width:60%">
         <li class="nav-item">
           <a class="nav-link" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Movies</a>
+          <a class="nav-link" href="/movie">Movies</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="/about">About us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="/contact">Contact us</a>
         </li>
       </ul>
       <!-- Left links -->
     </div>
-    <form action="search.php" method="post" class="d-flex flex-row m-3 gap-2" style="width:50%">
-      <input type="text" name="search" class="form-control mt-2 mr-7"
+    <form action="search.php" method="post" class="d-flex flex-row m-3" style="width:50%">
+      <input type="text" name="search" class="searchbar rounded-start"
       placeholder="Type here to search....">
-      <button type="submit" name="submit" class="btn btn-success mt-2 mr-7 bg-warning border-warning w-25">search</button>
+      <button type="submit" name="submit" class="btn-search rounded-end text-white">search</button>
     </form>
-    <!-- Collapsible wrapper -->
-
-    <!-- Right elements -->
-    <div class="d-flex align-items-center mr-60">
-      <!-- Icon -->
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-                <a class="nav-link" href="/register">Register</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/login">Login</a>
-            </li>
-      </ul>
-      
-    </div>
-  </div>
-</nav>
-</div>
-
-<!-- Navbar -->
-
     <?php
-  
+
     if(!isset($_SESSION["email"]))
       {
       echo
@@ -97,7 +81,7 @@
   }
     ?>
   </div>
-</nav>
+  </nav>
 </div>
 
 <!-- Navbar -->

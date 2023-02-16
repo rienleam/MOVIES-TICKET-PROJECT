@@ -18,13 +18,14 @@
                 <small class="form-text text-danger"> <?php echo $lastname_error; ?></small>
             </div>
         </div>
-        <label class="mt-1" for="phone">Phone Number</label>
+        <label class="mt-2" for="phone">Phone Number</label>
         <input type="number" name="phone" placeholder="Enter your phone number">
         <small class="form-text text-danger"> <?= $phone_error; ?></small>
 
         <label class="mt-1" for="email">Email</label>
         <input type="text" name="email" placeholder="Enter your email">
         <small class="form-text text-danger"> <?php echo $email_error; ?></small>
+        
         <label class="mt-1" for="password">Password</label>
         <input type="password" name="password" placeholder="Enter your password">
         <small class="form-text text-danger"> <?php echo $password_error; ?></small>
@@ -40,4 +41,3 @@
     </form>
 
 <?php
-    
