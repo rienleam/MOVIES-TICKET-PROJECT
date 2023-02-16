@@ -1,9 +1,7 @@
 <?php
 
-
 $number_ticket_error = '';
 $payment_error = '';
-
 $task_complete = 0;
 
 if($_SERVER['REQUEST_METHOD'] == 'POST')
@@ -32,4 +30,5 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
         header("Location: /printable");
     }
 }
+
 require('views/post/booking.view.php');

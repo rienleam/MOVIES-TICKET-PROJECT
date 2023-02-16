@@ -54,7 +54,6 @@
                 <p class="card-text"><?php echo $item['duration']; ?></p>
             </div>
             <a href="/detail?show_id=<?= $item['show_id']?>" class="btn details btn-outline-warning w-100 rounded-pill">Details</a>
-            <a href="/booking?show_id=<?= $item['show_id']?>" class="btn book btn-outline-warning w-100 rounded-pill">Book Now</a>
         </div>
         </div>
     <?php
@@ -62,5 +61,4 @@
     ?>
 </div>
 
-
-  <?php require "views/partials/footer.php" ?>
+<?php require "views/partials/footer.php" ?>
