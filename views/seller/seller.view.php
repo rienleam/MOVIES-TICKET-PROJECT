@@ -26,7 +26,7 @@
         </div>
         <div class="action" style="width: 10%">
         <a href="/edit?show_id=<?= $item['show_id']?>"><button id="edit" style="width: 80%; ">Edit</button></a>
-        <a href=""><button id="delete" style="width: 80%; ">Delete</button></a>
+        <a href="/delete?show_id=<?= $item['show_id']?>"><button id="delete" class="delete" style="width: 80%; ">Delete</button></a>
         </div>
     </div>
     <?php

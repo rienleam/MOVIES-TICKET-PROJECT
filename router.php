@@ -11,6 +11,7 @@ $routes = [
     '/logout' => 'controllers/logout/logout.controller.php',
     '/detail' => 'controllers/detail/detail.controller.php',
     '/edit' => 'views/seller/edit.view.php',
+    '/delete' => 'controllers/admin/delete.controller.php',
 ];
 
 if (array_key_exists($uri, $routes)) {
