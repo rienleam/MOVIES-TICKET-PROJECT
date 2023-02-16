@@ -147,6 +147,7 @@ body,html{
     border-radius: 10px;
     padding: 10px 30px 10px 30px;
     font-weight: bold;
+    border: none;
 }
 .btn-add:hover {
     -ms-transform: scale(1.03);
@@ -160,7 +161,7 @@ body,html{
     align-items: center;
 }
 
-.cardshows {
+.cardshows-seller {
     width: 90%;
     display: flex;
     justify-content: space-between;
@@ -168,14 +169,13 @@ body,html{
     margin-bottom: 25px;
     background-color: white;
     border: 2px solid orange;
-    padding: 20px;
 }
-.cardshows:hover {
-    -ms-transform: scale(1.01);
-    -webkit-transform: scale(1.01);
-    transform: scale(1.01);
+.cardshows-seller:hover {
+    -ms-transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
 }
-.cardshows img {
+.cardshows-seller img {
     width: 20%;
     border-radius: 10px;
 }
@@ -192,6 +192,7 @@ body,html{
 }
 .description {
     text-align: justify;
+    line-height: normal;
     padding-right: 15px;
 }
 .cost, .dates, .times, .durations {
@@ -225,7 +226,7 @@ body,html{
 
 .create {
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     display: flex;
     justify-content: flex-start;
     padding: 0;
