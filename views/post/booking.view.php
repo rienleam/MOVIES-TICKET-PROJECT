@@ -2,8 +2,9 @@
 require 'views/partials/header.php';
 session_start();
 ?>
-<div class="payment d-flex justify-content-start align-items-start" style="width: 100%;">
-    <form action="<?php $action ?>" method="post" class="buy-info bg-white d-flex flex-column p-5" style="width: 40%; height:100%">
+
+<div class="payment d-flex justify-content-start align-items-start" style="width: 100%; height:100vh;">
+    <form action="<?php $action ?>" method="post" class="buy-info bg-white d-flex flex-column p-5" style="width: 40%;">
         <h2 class="text-warning align-self-center mb-3"><b>Movie Ticket Booking</b></h2>
         <div class="movie-title d-flex justify-content-between">
             <p class="p-0 m-0">Theater name:</p>
@@ -49,7 +50,7 @@ session_start();
                 <button type="button" name="submit" class="btn cancel-booking bg-warning">Cancel</button>
             </a>
             <a href="/printable">
-                <button type="submit" name="submit" class="pay-now bg-warning">Pay now</button>
+                <button type="submit" name="submit" class="btn pay-now bg-warning">Pay now</button>
             </a>
         </div>
     </form>
