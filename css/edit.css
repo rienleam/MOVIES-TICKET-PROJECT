@@ -1,0 +1,333 @@
+/* body,html{
+    background: #e17c7c;
+    font-family: sans-serif;
+    height: 100vh;
+    font-family: sans-serif;
+    box-sizing: border-box;
+
+}
+
+form{
+    width: 35%;
+    border: 2px solid;
+    padding: 30px;
+    background:#ffff;
+    border-radius: 15px;
+}
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+input{
+    display: block;
+    border: 2px solid #ccc;
+    padding: 10px;
+    width: 95%;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+label{
+    color: #888;
+    font-size: 15px;
+}
+button{
+    float:right;
+    background: #555;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: none;
+}
+button:hover{
+    opacity: 7;
+}
+.error{
+    background:#F2DEDE;
+    color: #A94442;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    margin: 20px auto;
+} */
+
+
+body,html{
+    background: #000;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 500px;
+    font-family: sans-serif;
+}
+.Section_top{
+    width: 100%;
+    height: 130%;
+    overflow: hidden;
+    position: relative;
+    background-image: url(images/image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    animation: change 10s infinite ease-in-out;
+}
+.content h1{
+    color: #fff;
+    font-size: 60px;
+    letter-spacing: 15px;
+}
+.content h1 span{
+    color: #111;
+}
+.content a{
+    background: #85c1ee;
+    padding: 10px 24px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.content a:hover{
+    background: #034e88;
+    color: #fff;
+}
+.searchbar {
+    width: 85%;
+    padding: 10px;
+    border: none;
+}
+.btn-search {
+    width: 15%;
+    padding: 10px;
+    border: none;
+    background-color: orange;
+}
+.carousel {
+    margin-top: 90px;
+}
+@keyframes change{
+    0%
+    {
+        background-image: url(../assets/images/The-Dead-Dont-Die.jpg);
+    }
+    20%
+    {
+        background-image: url(../assets/images/The-Dead-Dont-Die.jpg);
+    }
+    40%
+    {
+        background-image: url(../assets/images/spiderman.jpg);
+    }
+    60%
+    {
+        background-image: url(../assets/images/spiderman.jpg);
+    }
+    80%
+    {
+        background-image: url(../assets/images/Monster\ Hunter.jpeg);
+    }
+    100%
+    {
+        background-image: url(../assets/images/Monster\ Hunter.jpeg);
+    }
+}
+
+.container{
+    display: flex;
+}
+.container_card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card{
+    width: 22%;
+}
+.card:hover {
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-text {
+    text-align: justify;
+}
+.date, .time, .duration {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.material-icons {
+    margin-right: 5px;
+    color: orange;
+}
+.btn {
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+/* seller view */
+
+.showlist {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin-top: 140px;
+    margin-bottom: 30px;
+}
+.heading {
+    color: orange;
+}
+.btn-add {
+    background-color: orange;
+    border-radius: 10px;
+    padding: 10px 30px 10px 30px;
+    font-weight: bold;
+}
+.btn-add:hover {
+    -ms-transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+    background-color: rgb(245, 181, 63);
+}
+.details p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cardshows {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    background-color: white;
+    border: 2px solid orange;
+    padding: 20px;
+}
+.cardshows:hover {
+    -ms-transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    transform: scale(1.01);
+}
+.cardshows img {
+    width: 20%;
+    border-radius: 10px;
+}
+.details {
+    width: 65%;
+}
+.details p {
+    margin: 0;
+    padding: 0;
+}
+.theatername {
+    font-size: 20px;
+    font-weight: bold;
+}
+.description {
+    text-align: justify;
+    padding-right: 15px;
+}
+.cost, .dates, .times, .durations {
+    font-size: 14px;
+}
+.action {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#edit, #delete {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid orange;
+    border-radius: 5px;
+    color: black;
+}
+#delete {
+    border: 2px solid red;
+}
+#edit:hover {
+    background-color: orange;
+    color: white;
+}
+#delete:hover {
+    background-color: red;
+    color: white;
+}
+
+/* addshow */
+
+.create {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+    background: url(../assets/images/cinema.jpg);
+    background-size: cover;
+}
+.addshow-form {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    color: white;
+    margin-left: 10%;
+    padding: 4% 3% 3% 3%;
+    background-color: #3d3b3b;
+}
+.addshow-form h2 {
+    text-align: center;
+    font-weight: bold;
+}
+.addshow-form label {
+    font-weight: bold;
+}
+.addshow-form input {
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+}
+.cost-date, .time-duration {
+    display: flex;
+    justify-content: space-between;
+}
+.the-cost, .the-time, .the-date, .the-duration {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+.click-action {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.click-action button {
+    padding: 5px 30px 5px 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+}
