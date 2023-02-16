@@ -187,3 +187,29 @@ hr{
 .select{
     margin-right: 5px;
 }
+
+/* booking */
+
+.payment {
+    height: 100vh;
+    background: url(../assets/images/cinema.jpg);
+    background-size: cover;
+}
+.buy-info {
+    margin-left: 10%;
+}
+.pay-now, .cancel-booking {
+    border: none;
+    font-weight: bold;
+    color: white;
+    padding: 7px 30px 7px 30px;
+    border-radius: 20px;
+}
+.pay-now:hover {
+    background-color: orange;
+    color: black;
+}
+.cancel-booking:hover {
+    background-color: orange;
+    color: black;
+}
