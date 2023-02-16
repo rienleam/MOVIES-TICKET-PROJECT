@@ -545,6 +545,7 @@ hr {
     background-size: cover;
 }
 .buy-info {
+    height: 100%;
     margin-left: 10%;
 }
 .pay-now, .cancel-booking {
