@@ -38,7 +38,7 @@
     foreach ($items as $item){ 
     ?>
         <div class="cardshows card m-3 bg-light text-dark">
-        <img src="<?php echo $item['image']; ?>" class="card-img-top" style = "width: 100%; height: 270px" alt="Fissure in Sandstone"/>
+        <img src="../../assets/images/<?php echo $item['image']; ?>" class="card-img-top" style = "width: 100%; height: 270px" alt="Fissure in Sandstone"/>
         <div class="card-body">
             <h4 class="card-title fw-bold"><?php echo $item['show_name']; ?></h4>
             <div class="date m-0">
