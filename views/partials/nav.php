@@ -1,4 +1,9 @@
 <!-- Navbar -->
+<?php
+
+session_start();
+
+?>
 <div class="container">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light fixed-top">
   <!-- Container wrapper -->
@@ -26,18 +31,18 @@
         />
       </a>
       <!-- Left links -->
-      <ul class="navbar-nav me-auto mb-lg-0" style="width:50%">
+      <ul class="navbar-nav me-auto mb-lg-0" style="width:60%">
         <li class="nav-item">
           <a class="nav-link" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Movies</a>
+          <a class="nav-link" href="/movie">Movies</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="/about">About us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="/contact">Contact us</a>
         </li>
       </ul>
       <!-- Left links -->
@@ -48,7 +53,7 @@
       <button type="submit" name="submit" class="btn-search rounded-end text-white">search</button>
     </form>
     <?php
-    session_start();
+
     if(!isset($_SESSION["email"]))
       {
       echo
