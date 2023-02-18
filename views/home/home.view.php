@@ -2,7 +2,7 @@
   require "databases/database.php";
   require "views/partials/header.php";
   require "views/partials/nav.php";
-  $items = $connection->query(" SELECT * FROM list_shows");
+  $items = $connection->query(" SELECT * FROM list_shows LIMIT 8");
 ?>
 
 <div id="carouselExample" class="carousel slide">

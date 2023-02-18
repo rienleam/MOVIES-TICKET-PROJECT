@@ -5,12 +5,8 @@
     $items = $connection->query("SELECT * FROM list_shows");
 ?>
 <link rel="stylesheet" href="views/css/seller.view.css">
-<div class="showlist">
-    <div class="title">
-        <h1 class="heading">Theater List</h1>
-        <a href="/addShow"><button id="add" type="submit" class="btn-add text-white" name ='add'>Add new Theater</button></a>
-    </div>
-   
+        <h1 class="heading">Movie list</h1>
+       
     <?php 
     foreach ($items as $item){
     ?>
@@ -25,8 +21,7 @@
             <p class="durations"><i class="large material-icons">access_alarms</i><?php echo $item['duration']; ?></p>
         </div>
         <div class="action" style="width: 10%">
-        <a href="/edit?show_id=<?= $item['show_id']?>"><button id="edit" style="width: 80%; ">Edit</button></a>
-        <a href="/delete?show_id=<?= $item['show_id']?>"><button id="delete" class="delete" style="width: 80%; ">Delete</button></a>
+        <a href="/detail?show_id=<?= $item['show_id']?>"><button id="edit" style="width: 80%; ">Detail</button></a>
         </div>
     </div>
     <?php
@@ -34,3 +29,5 @@
     
     ?>
 </div>
+<?php
+require "views/partials/footer.php";

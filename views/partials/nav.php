@@ -36,8 +36,30 @@ session_start();
         <li class="nav-item">
           <a class="nav-link" href="/">Home</a>
         </li>
+        
         <li class="nav-item">
-          <a class="nav-link" href="/movie">Movies</a>
+          <?php
+          if (empty($_SESSION['email']))
+          {
+            echo '<a class="nav-link" href="/movie">Movies</a>';
+          }
+          else
+          {
+            if ($_SESSION["email"] == "admin123@gmail.com")
+            {
+              echo '<a class="nav-link" href="/movieEdit">Movies</a>';
+            }
+            else if ($_SESSION["email"] != "admin123@gmail.com")
+            {
+              echo '<a class="nav-link" href="/movie">Movies</a>';
+            }
+            else
+            {
+              echo '<a class="nav-link" href="/movie">Movies</a>';
+            }
+          }
+          ?>
+          
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/about">About us</a>

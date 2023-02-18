@@ -40,44 +40,81 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
             $email_error = "Email required '@";
          }
         else{
-            $emailInside= getIdUser($email);
-            $nameInside= getIdUser($email);
-            if (empty($emailInside))
+            if ($email == "admin123@gmail.com")
             {
-                $emailInside = '';
+                $emailInside = getAdminId($email);
+                if (empty($emailInside))
+                {
+                    $emailInside = '';
+                    $massge_error = 'Email not found';
+                }
+                else 
+                {
+                    $emailInside = getAdminEmail($email)['email'];
+                }
             }
-            else{
-                $emailInside = $emailInside= getIdUser($email)['email'];
-            }
-                // if(isset($_POST["login"]))
-                // { 
-                //     $_SESSION["email"]= $emailInside;
-                // }
-            if ($email == $emailInside )
+            else
             {
-                
-                $passwordwordInput  = $_POST['password'];
-                $db_password = user_password($email)['password']; // From Database
-        
-                if(password_verify($passwordwordInput , $db_password)) {
+                $emailInside= getIdUser($email);
+                if (empty($emailInside))
+                {
+                    $emailInside = '';
+                    $massge_error = 'Email not found';
+                }
+                else
+                {
+                    $emailInside=getIdUser($email)['email'];
+                }
+            }
+            if ($email == "admin123@gmail.com")
+            {
+                // $emailInside = getAdminEmail($email)['email'];
+                $db_password = getAdminPassword($email)['password'];
+                $massge_error = 1;
+                if(password_verify($passwordInput , $db_password)) {
                     $_SESSION['email'] = $emailInside;
                     header('location: /');
                     $_SESSION['login'] = true;
+                    $massge_error = 'Email not found';
                 } 
-                else{
+                else
+                {
                     $massge_error = "Email or password incorrect "; 
                 }
-
-            }
-            else 
+                          
+            }     
+            else
             {
-                $massge_error = "Email or password incorrect "; 
-                $passwordword_error = " ";
-            }
-        }
-             
-    }
     
+                $emailInside=getIdUser($email)['email'];
+                if ($email == $emailInside )
+                {
+                    $db_password = user_password($email)['password'];
+                    if(password_verify($passwordInput , $db_password)) 
+                    {
+                        $_SESSION['email'] = $emailInside;
+                        header('location: /');
+                        $_SESSION['login'] = true;
+                    } 
+                    else
+                    {
+                        $massge_error = "Email or password incorrect "; 
+                    }
+                }
+                else 
+                {
+                    $massge_error = "Email or password incorrect "; 
+                    $password_error = " ";
+                }
+            }
+    
+        }
+    }
 }
+             
+    
+
+    
+
 require 'views/login/login.view.php'; 
     

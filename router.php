@@ -3,7 +3,7 @@ $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
 
 $routes = [
     '/' => 'controllers/home/home.controller.php',
-    '/movie' => 'controllers/admin/admin.controller.php',
+    '/movie' => 'controllers/movie/movie.controller.php',
     '/contcet' => 'controllers/contcet/contcet.controller.php',
     '/register' => 'controllers/register/register.controllers.php',
     '/login' => 'controllers/login/login.controllers.php',
@@ -15,6 +15,8 @@ $routes = [
     '/contact' => 'controllers/contact/contact.controller.php',
     '/booking' => 'controllers/booking/booking.controller.php',
     '/printable' => 'controllers/booking/printable.controller.php',
+    '/addShow' => 'admin/addshow.controller.php',
+    '/movieEdit' => 'admin/admin.controller.php',
 ];
 
 if (array_key_exists($uri, $routes)) {

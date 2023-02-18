@@ -37,7 +37,44 @@ function getIdUser($email){
     return null;
 }
 
+function getAdminEmail($email){
+    global $connection;
+    $statement = $connection->prepare("SELECT * FROM admins WHERE email = :email;");
+    $statement->execute([
+        ':email' => $email
+    ]);
+    if($statement->rowCount()>0)
+    {
+        $item = $statement->fetch();
+        return $item;
+    }
+    return null;
+}
 
+function getAdminPassword($email)
+{
+    global $connection;
+    $statement = $connection->prepare("SELECT * FROM admins WHERE email = :email");
+    $statement->execute([
+        ':email'=>$email
+    ]);
+    $item = $statement->fetch();
+    return $item;
+}
+
+function getAdminId($email){
+    global $connection;
+    $statement = $connection->prepare("SELECT * FROM admins WHERE email = :email;");
+    $statement->execute([
+        ':email' => $email
+    ]);
+    if($statement->rowCount()>0)
+    {
+        $item = $statement->fetch();
+        return $item;
+    }
+    return null;
+}
 
 
 
