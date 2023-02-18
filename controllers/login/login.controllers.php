@@ -1,5 +1,5 @@
 <?php
-
+ session_start();
 require 'models/login.model.php';
 
 function validate_email(string $email)

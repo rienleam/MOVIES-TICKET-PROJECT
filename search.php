@@ -8,31 +8,16 @@ require "views/partials/nav.php";
 
 
 <?php $search = $_POST['search'];?>
-<!-- <div class="container d-flex">
-  <div class="row align-items center">
-    <div class="col-lg-12 py-5 ml-10">
-    <div class="card px-3 ">
-      
-    </div>
-    </div>
-  </div>
-</div> -->
 
 <?php
 
-//connect ot the database
 require 'databases/database.php';
-//get the search keyword
 $search = $_POST['search'];
-//SQL query to get the products based on the search keyword
 $sql = "SELECT * FROM list_shows WHERE show_name LIKE 
 '%$search%' OR date LIKE '%$search%' OR Time LIKE '%$search%'
 ";
-//execute the query
 $res = mysqli_query($connection, $sql);
-//count the rows
 $count = mysqli_num_rows($res);
-//check whether the product is available
 if ($count > 0) {
   while ($row  = mysqli_fetch_assoc($res)) {
     $Show_Name = $row['show_name'];
@@ -59,12 +44,10 @@ if ($count > 0) {
         <p class="card-text"><?php echo $Duration; ?></p>
       </div>
       <a href="#" class="btn details btn-outline-warning w-100 rounded-pill">Details</a>
-      <a href="#" class="btn book btn-outline-warning w-100 rounded-pill">Book Now</a>
-            
+      <a href="#" class="btn book btn-outline-warning w-100 rounded-pill">Book Now</a>    
     </div>
   </div>
 </div>
-
   <?php
   }
   }else {
@@ -73,11 +56,6 @@ if ($count > 0) {
     </div>";
   }
   ?>
-<!------ start of card 1 ---------------->
-  
-<!------ End of card 1 ---------------->
-
-
 <?php
 require "views/partials/footer.php";
   

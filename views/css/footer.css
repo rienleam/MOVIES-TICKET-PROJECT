@@ -25,4 +25,9 @@
 li a {
     text-decoration: none;
 }
+.image
+{
+    width: 200px;
+    height: 350px;
+}
 
