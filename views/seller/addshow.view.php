@@ -1,15 +1,11 @@
 <?php
     require 'views/partials/header.php';
-
-
 ?>
 <link rel="stylesheet" href="views/css/addshow.css">
 <div class="create">
     <form class="addshow-form" action= "#"  method="post" enctype="multipart/form-data">
 
         <h2 class="mb-2 text-warning">Create New Theater </h2>
-
-        
 
         <label class="mt-1" for="theater-name">Theater Name</label>
         <input type="text" name="theater-name" placeholder="Enter theater name">

@@ -76,12 +76,6 @@ function getAdminId($email){
     return null;
 }
 
-
-
-
-
-
-
 function getDataFromDB($query,$stmt,$connection,$email,$password)
 {
     $query = "SELECT * FROM users";

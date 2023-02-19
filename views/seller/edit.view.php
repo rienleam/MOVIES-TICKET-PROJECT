@@ -9,8 +9,6 @@
 
         <h2 class="mb-2 text-warning">Edit New Theater </h2>
 
-        
-
         <label class="mt-1" for="theater-name">Theater Name</label>
         <input type="text" name="theater-name"  value="<?= $movies['show_name']; ?>" placeholder="Enter theater name">
         <small class="form-text text-danger"> <?php echo $theatername_error; ?></small>
