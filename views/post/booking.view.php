@@ -1,6 +1,7 @@
 <?php 
-require 'views/partials/header.php';
 session_start();
+require 'views/partials/header.php';
+// require "views/partials/nav.php";
 ?>
 
 <div class="payment d-flex justify-content-start align-items-start" style="width: 100%; height:100vh;">
@@ -50,7 +51,7 @@ session_start();
                 <button type="button" name="submit" class="btn cancel-booking bg-warning">Cancel</button>
             </a>
             <a href="/printable">
-                <button type="submit" name="submit" class="btn pay-now bg-warning">Pay now</button>
+                <button type="submit" name="button" value="1" class="btn pay-now bg-warning">Pay now</button>
             </a>
         </div>
     </form>
