@@ -36,7 +36,7 @@ session_start();
         <h3 class="align-self-start"><b>Your Payment</b></h3>
         <div class="payment-select d-flex justify-content-between">
             <p class="p-0 m-0">Choose payment:</p>
-            <select name="choose-payment" id="choose-payment" class="p-2" style="width: 60%;">
+            <select name="choose-payment" id="choose-payment" class="p-2 bg-light" style="width: 60%;">
                 <option value="none" selected disabled>---------choose your card---------</option>
                 <option value="aba">ABA</option>
                 <option value="wing">WING</option>

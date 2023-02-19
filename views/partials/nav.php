@@ -71,7 +71,7 @@ session_start();
       <!-- Left links -->
     </div>
     <form action="search.php" method="post" class="d-flex flex-row m-3" style="width:50%">
-      <input type="text" name="search" class="searchbar rounded-start"
+      <input type="text" name="search" class="searchbar rounded-start bg-light"
       placeholder="Type here to search....">
       <button type="submit" name="submit" class="btn-search rounded-end text-white">search</button>
     </form>
