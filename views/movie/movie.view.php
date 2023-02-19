@@ -5,7 +5,8 @@
     $items = $connection->query("SELECT * FROM list_shows");
 ?>
 <link rel="stylesheet" href="views/css/seller.view.css">
-        <h1 class="heading">Movie list</h1>
+<div class="showlist mt-5 pt-5">
+    <h1 class="heading mt-3">Movie list</h1>
        
     <?php 
     foreach ($items as $item){
@@ -28,6 +29,7 @@
     }
     
     ?>
+    </div>
 </div>
 <?php
 require "views/partials/footer.php";

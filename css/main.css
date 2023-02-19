@@ -84,10 +84,12 @@ body,html{
     display: flex;
 }
 .container_card {
+    margin-top: 10px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    flex-direction: row;
 }
 .cardshows:hover {
     -ms-transform: scale(1.05);
